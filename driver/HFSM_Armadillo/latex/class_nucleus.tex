@@ -1,0 +1,173 @@
+\hypertarget{class_nucleus}{\section{Nucleus Class Reference}
+\label{class_nucleus}\index{Nucleus@{Nucleus}}
+}
+
+
+Collaboration diagram for Nucleus\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_nucleus__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_nucleus_aa51f8aa0e853d8c58c8bbf7e56eb93f9}{Nucleus} (int Z, int A, string space, string force)
+\item 
+\hyperlink{class_nucleus_a012f1716baa1cf5317e6fc0e06c44647}{$\sim$\-Nucleus} ()
+\item 
+void \hyperlink{class_nucleus_a5f953c3273fccb833c90c929e6c991a2}{Construct\-\_\-\-Configuration} (vec \&E\-\_\-cutoff)
+\begin{DoxyCompactList}\small\item\em Construct different configurations. \end{DoxyCompactList}\item 
+void \hyperlink{class_nucleus_a5e449f1e876db72824f9466131becac0}{Spectral} (vec \&J, vec \&Parity)
+\begin{DoxyCompactList}\small\item\em Spectral with angular momentum projection. \end{DoxyCompactList}\item 
+void \hyperlink{class_nucleus_a2f41a5f6ec0546ec57736d5f0bad6e17}{Spectral} ()
+\begin{DoxyCompactList}\small\item\em Spectral with angular momentum projection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hartree_fock}{Hartree\-Fock} \hyperlink{class_nucleus_a26891e375a90425a013eab9c7176f318}{Basis}
+\item 
+imat \hyperlink{class_nucleus_a0bca60cd6f52b789fa096d0f5ce2a75e}{Configuration} \mbox{[}\hyperlink{class_interaction}{Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_nucleus_aa51f8aa0e853d8c58c8bbf7e56eb93f9}{\index{Nucleus@{Nucleus}!Nucleus@{Nucleus}}
+\index{Nucleus@{Nucleus}!Nucleus@{Nucleus}}
+\subsubsection[{Nucleus}]{\setlength{\rightskip}{0pt plus 5cm}Nucleus\-::\-Nucleus (
+\begin{DoxyParamCaption}
+\item[{int}]{Z, }
+\item[{int}]{A, }
+\item[{string}]{space, }
+\item[{string}]{force}
+\end{DoxyParamCaption}
+)}}\label{class_nucleus_aa51f8aa0e853d8c58c8bbf7e56eb93f9}
+\hypertarget{class_nucleus_a012f1716baa1cf5317e6fc0e06c44647}{\index{Nucleus@{Nucleus}!$\sim$\-Nucleus@{$\sim$\-Nucleus}}
+\index{$\sim$\-Nucleus@{$\sim$\-Nucleus}!Nucleus@{Nucleus}}
+\subsubsection[{$\sim$\-Nucleus}]{\setlength{\rightskip}{0pt plus 5cm}Nucleus\-::$\sim$\-Nucleus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_nucleus_a012f1716baa1cf5317e6fc0e06c44647}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_nucleus_a5f953c3273fccb833c90c929e6c991a2}{\index{Nucleus@{Nucleus}!Construct\-\_\-\-Configuration@{Construct\-\_\-\-Configuration}}
+\index{Construct\-\_\-\-Configuration@{Construct\-\_\-\-Configuration}!Nucleus@{Nucleus}}
+\subsubsection[{Construct\-\_\-\-Configuration}]{\setlength{\rightskip}{0pt plus 5cm}void Nucleus\-::\-Construct\-\_\-\-Configuration (
+\begin{DoxyParamCaption}
+\item[{vec \&}]{E\-\_\-cutoff}
+\end{DoxyParamCaption}
+)}}\label{class_nucleus_a5f953c3273fccb833c90c929e6c991a2}
+
+
+Construct different configurations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W\-F} & Hartree Fock wavefunctions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Different excited configurations 
+\end{DoxyReturn}
+!!!!! 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_nucleus_a5f953c3273fccb833c90c929e6c991a2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_nucleus_a5e449f1e876db72824f9466131becac0}{\index{Nucleus@{Nucleus}!Spectral@{Spectral}}
+\index{Spectral@{Spectral}!Nucleus@{Nucleus}}
+\subsubsection[{Spectral}]{\setlength{\rightskip}{0pt plus 5cm}void Nucleus\-::\-Spectral (
+\begin{DoxyParamCaption}
+\item[{vec \&}]{J, }
+\item[{vec \&}]{Parity}
+\end{DoxyParamCaption}
+)}}\label{class_nucleus_a5e449f1e876db72824f9466131becac0}
+
+
+Spectral with angular momentum projection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em J} & angular momentum \\
+\hline
+{\em P} & parity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Excited energies 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_nucleus_a5e449f1e876db72824f9466131becac0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{class_nucleus_a5e449f1e876db72824f9466131becac0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_nucleus_a2f41a5f6ec0546ec57736d5f0bad6e17}{\index{Nucleus@{Nucleus}!Spectral@{Spectral}}
+\index{Spectral@{Spectral}!Nucleus@{Nucleus}}
+\subsubsection[{Spectral}]{\setlength{\rightskip}{0pt plus 5cm}void Nucleus\-::\-Spectral (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_nucleus_a2f41a5f6ec0546ec57736d5f0bad6e17}
+
+
+Spectral with angular momentum projection. 
+
+\begin{DoxyReturn}{Returns}
+Excited energies 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_nucleus_a2f41a5f6ec0546ec57736d5f0bad6e17_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_nucleus_a26891e375a90425a013eab9c7176f318}{\index{Nucleus@{Nucleus}!Basis@{Basis}}
+\index{Basis@{Basis}!Nucleus@{Nucleus}}
+\subsubsection[{Basis}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hartree\-Fock} Nucleus\-::\-Basis\hspace{0.3cm}{\ttfamily [private]}}}\label{class_nucleus_a26891e375a90425a013eab9c7176f318}
+\hypertarget{class_nucleus_a0bca60cd6f52b789fa096d0f5ce2a75e}{\index{Nucleus@{Nucleus}!Configuration@{Configuration}}
+\index{Configuration@{Configuration}!Nucleus@{Nucleus}}
+\subsubsection[{Configuration}]{\setlength{\rightskip}{0pt plus 5cm}imat Nucleus\-::\-Configuration\mbox{[}{\bf Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_nucleus_a0bca60cd6f52b789fa096d0f5ce2a75e}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{main_8cpp}{main.\-cpp}\end{DoxyCompactItemize}

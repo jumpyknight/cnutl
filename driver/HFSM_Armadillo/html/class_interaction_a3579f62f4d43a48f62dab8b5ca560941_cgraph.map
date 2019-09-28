@@ -1,0 +1,10 @@
+<map id="Interaction::Interaction" name="Interaction::Interaction">
+<area shape="rect" id="node2" href="$class_interaction.html#a5215914c0464c733a6c140a814b48513" title="Read J orbit in isospin representation. " alt="" coords="223,5,404,32"/>
+<area shape="rect" id="node3" href="$class_interaction.html#ae16c26ed612f825cfa114b0ca9a4fbc2" title="Setup TBME and uncoupled states in isospin representation. " alt="" coords="233,57,393,98"/>
+<area shape="rect" id="node4" href="$class_interaction.html#a467419c63d4d647ad219f7b46b6afed5" title="Read OBME and TBME in isospin representation. " alt="" coords="206,123,421,149"/>
+<area shape="rect" id="node5" href="$class_interaction.html#ae6f2362eebdf933d63c8133328fbf0f7" title="Construct interaction in isospin representation. " alt="" coords="240,174,387,215"/>
+<area shape="rect" id="node6" href="$class_interaction.html#a6df2e9326e87a957cf6efd63e3188cf7" title="Read J orbit in proton&#45;neutron representation. " alt="" coords="223,240,404,267"/>
+<area shape="rect" id="node7" href="$class_interaction.html#a34f5f4258d6b5acb0cb228ff82855ed6" title="Setup TBME and uncoupled states in proton&#45;neutron representation. " alt="" coords="233,291,393,333"/>
+<area shape="rect" id="node8" href="$class_interaction.html#a96b36b6eab380437ba94585a5ac2a31b" title="Read OBME and TBME in proton&#45;neutron representation. " alt="" coords="206,357,421,384"/>
+<area shape="rect" id="node9" href="$class_interaction.html#a42aceecb46825fe9c78b71a00f888206" title="Construct interaction in proton&#45;neutron representation. " alt="" coords="240,409,387,450"/>
+</map>

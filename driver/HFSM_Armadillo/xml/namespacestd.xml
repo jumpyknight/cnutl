@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="namespacestd" kind="namespace">
+    <compoundname>std</compoundname>
+    <briefdescription>
+<para>Shell Model Calculation in Hartree Fock Basis with Angular Momentum Projection included. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para></simplesect>
+<simplesect kind="author"><para>S.M. Wang (Wang Simin) Copyright (c) 2014, Peking University. Written by S.M. Wang, <ulink url="mailto:wangsimin89@gmail.com">wangsimin89@gmail.com</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="56" column="1"/>
+  </compounddef>
+</doxygen>

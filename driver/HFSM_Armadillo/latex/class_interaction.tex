@@ -1,0 +1,480 @@
+\hypertarget{class_interaction}{\section{Interaction$<$ T $>$ Class Template Reference}
+\label{class_interaction}\index{Interaction$<$ T $>$@{Interaction$<$ T $>$}}
+}
+
+
+Collaboration diagram for Interaction$<$ T $>$\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_interaction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_interaction_a1590aded9946d5afaa3ae5a2f77b1933}{Interaction} ()
+\item 
+\hyperlink{class_interaction_a3579f62f4d43a48f62dab8b5ca560941}{Interaction} (string space, string M\-E, int A)
+\item 
+\hyperlink{class_interaction_a3d1a04c8afff080d7e9409d59a96efba}{$\sim$\-Interaction} ()
+\item 
+void \hyperlink{class_interaction_a906559736b06d72e49244436e8dfad0d}{unpack} (int num, int \&i, int \&j, int \&k, int \&l)
+\item 
+void \hyperlink{class_interaction_a68bde2a8a674f54a8f42cd992e96b907}{pack} (int i, int j, int k, int l, int \&num)
+\item 
+void \hyperlink{class_interaction_a5215914c0464c733a6c140a814b48513}{Read\-\_\-\-Orbit\-\_\-\-Iso} (string space)
+\begin{DoxyCompactList}\small\item\em Read J orbit in isospin representation. \end{DoxyCompactList}\item 
+void \hyperlink{class_interaction_a6df2e9326e87a957cf6efd63e3188cf7}{Read\-\_\-\-Orbit\-\_\-\-P\-N} (string space)
+\begin{DoxyCompactList}\small\item\em Read J orbit in proton-\/neutron representation. \end{DoxyCompactList}\item 
+void \hyperlink{class_interaction_a467419c63d4d647ad219f7b46b6afed5}{Read\-\_\-\-Interaction\-\_\-\-Iso} (string M\-E)
+\begin{DoxyCompactList}\small\item\em Read O\-B\-M\-E and T\-B\-M\-E in isospin representation. \end{DoxyCompactList}\item 
+void \hyperlink{class_interaction_a96b36b6eab380437ba94585a5ac2a31b}{Read\-\_\-\-Interaction\-\_\-\-P\-N} (string M\-E)
+\begin{DoxyCompactList}\small\item\em Read O\-B\-M\-E and T\-B\-M\-E in proton-\/neutron representation. \end{DoxyCompactList}\item 
+void \hyperlink{class_interaction_ae6f2362eebdf933d63c8133328fbf0f7}{Construct\-\_\-\-Interaction\-\_\-\-Iso} ()
+\begin{DoxyCompactList}\small\item\em Construct interaction in isospin representation. \end{DoxyCompactList}\item 
+void \hyperlink{class_interaction_a42aceecb46825fe9c78b71a00f888206}{Construct\-\_\-\-Interaction\-\_\-\-P\-N} ()
+\begin{DoxyCompactList}\small\item\em Construct interaction in proton-\/neutron representation. \end{DoxyCompactList}\item 
+void \hyperlink{class_interaction_ae16c26ed612f825cfa114b0ca9a4fbc2}{Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-Iso} (\hyperlink{class_j___orbit}{J\-\_\-\-Orbit} $\ast$J, int dim, \hyperlink{struct_coupled___state}{Coupled\-\_\-\-State} $\ast$vtbme)
+\begin{DoxyCompactList}\small\item\em Setup T\-B\-M\-E and uncoupled states in isospin representation. \end{DoxyCompactList}\item 
+void \hyperlink{class_interaction_a34f5f4258d6b5acb0cb228ff82855ed6}{Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-P\-N} (\hyperlink{class_j___orbit}{J\-\_\-\-Orbit} $\ast$$\ast$Jstates, int $\ast$dim, \hyperlink{struct_coupled___state}{Coupled\-\_\-\-State} $\ast$vtbme)
+\begin{DoxyCompactList}\small\item\em Setup T\-B\-M\-E and uncoupled states in proton-\/neutron representation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 , typename T3 $>$ }\\void \hyperlink{class_interaction_aa840d7de0932cb51370619a8033b7800}{Basis\-\_\-\-Transform} (\hyperlink{class_interaction}{Interaction}$<$ T3 $>$ \&force, T1 $\ast$psil, T2 $\ast$psir)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_interaction_afef136dd95339bef3a8c5e8488f6455f}{Dimension\-\_\-\-M} \mbox{[}\hyperlink{class_interaction_a067c62aec0e8fba647d5e5cefb13fadc}{Iso\-Spin\-\_\-\-Z}\mbox{]}
+\item 
+int \hyperlink{class_interaction_ae169b32f8b692bdf54bdae97c2f395be}{Dimension\-\_\-\-J} \mbox{[}\hyperlink{class_interaction_a067c62aec0e8fba647d5e5cefb13fadc}{Iso\-Spin\-\_\-\-Z}\mbox{]}
+\item 
+\hyperlink{class_j___orbit}{J\-\_\-\-Orbit} $\ast$ \hyperlink{class_interaction_a42d5c1378bd17f7755424f7ab5702ef6}{J\-\_\-scheme} \mbox{[}\hyperlink{class_interaction_a067c62aec0e8fba647d5e5cefb13fadc}{Iso\-Spin\-\_\-\-Z}\mbox{]}
+\item 
+\hyperlink{class_m___state}{M\-\_\-\-State} $\ast$ \hyperlink{class_interaction_ad29cbf9eca392e71958932cef5f7bf66}{M\-\_\-scheme} \mbox{[}\hyperlink{class_interaction_a067c62aec0e8fba647d5e5cefb13fadc}{Iso\-Spin\-\_\-\-Z}\mbox{]}
+\item 
+ivec \hyperlink{class_interaction_acfc6941cb6a85c4368855da6503a892f}{index} \mbox{[}\hyperlink{class_interaction_a067c62aec0e8fba647d5e5cefb13fadc}{Iso\-Spin\-\_\-\-Z}+1\mbox{]}
+\item 
+Col$<$ T $>$ \hyperlink{class_interaction_ac7b745819fe9b13f3df3bd7750eceb97}{T\-B\-M\-E} \mbox{[}\hyperlink{class_interaction_a067c62aec0e8fba647d5e5cefb13fadc}{Iso\-Spin\-\_\-\-Z}+1\mbox{]}
+\item 
+Mat$<$ T $>$ \hyperlink{class_interaction_ad629df71841bfb02116616b2f4764811}{O\-B\-M\-E} \mbox{[}\hyperlink{class_interaction_a067c62aec0e8fba647d5e5cefb13fadc}{Iso\-Spin\-\_\-\-Z}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_interaction_a067c62aec0e8fba647d5e5cefb13fadc}{Iso\-Spin\-\_\-\-Z} = 2
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_coupled___state}{Coupled\-\_\-\-State} $\ast$ \hyperlink{class_interaction_aafd4ee901de0d1463b71f89294b4b3f5}{Orbit}
+\item 
+int \hyperlink{class_interaction_a5a8eceab2bed942ec46d581b4cd4a661}{Mass\-\_\-\-Num}
+\item 
+double \hyperlink{class_interaction_afd1f26a552c012f6444e02a0f2718388}{hbar\-\_\-omiga}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_interaction_a1590aded9946d5afaa3ae5a2f77b1933}{\index{Interaction@{Interaction}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!Interaction@{Interaction}}
+\subsubsection[{Interaction}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Interaction}$<$ T $>$\-::{\bf Interaction} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_a1590aded9946d5afaa3ae5a2f77b1933}
+\hypertarget{class_interaction_a3579f62f4d43a48f62dab8b5ca560941}{\index{Interaction@{Interaction}!Interaction@{Interaction}}
+\index{Interaction@{Interaction}!Interaction@{Interaction}}
+\subsubsection[{Interaction}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Interaction}$<$ T $>$\-::{\bf Interaction} (
+\begin{DoxyParamCaption}
+\item[{string}]{space, }
+\item[{string}]{M\-E, }
+\item[{int}]{A}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_a3579f62f4d43a48f62dab8b5ca560941}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interaction_a3579f62f4d43a48f62dab8b5ca560941_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interaction_a3d1a04c8afff080d7e9409d59a96efba}{\index{Interaction@{Interaction}!$\sim$\-Interaction@{$\sim$\-Interaction}}
+\index{$\sim$\-Interaction@{$\sim$\-Interaction}!Interaction@{Interaction}}
+\subsubsection[{$\sim$\-Interaction}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Interaction}$<$ T $>$\-::$\sim${\bf Interaction} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_a3d1a04c8afff080d7e9409d59a96efba}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_interaction_aa840d7de0932cb51370619a8033b7800}{\index{Interaction@{Interaction}!Basis\-\_\-\-Transform@{Basis\-\_\-\-Transform}}
+\index{Basis\-\_\-\-Transform@{Basis\-\_\-\-Transform}!Interaction@{Interaction}}
+\subsubsection[{Basis\-\_\-\-Transform}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ template$<$typename T1 , typename T2 , typename T3 $>$ void {\bf Interaction}$<$ T $>$\-::Basis\-\_\-\-Transform (
+\begin{DoxyParamCaption}
+\item[{{\bf Interaction}$<$ T3 $>$ \&}]{force, }
+\item[{T1 $\ast$}]{psil, }
+\item[{T2 $\ast$}]{psir}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_aa840d7de0932cb51370619a8033b7800}
+One body matrix elements
+
+Two body matrix elements 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_interaction_aa840d7de0932cb51370619a8033b7800_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_interaction_aa840d7de0932cb51370619a8033b7800_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interaction_ae6f2362eebdf933d63c8133328fbf0f7}{\index{Interaction@{Interaction}!Construct\-\_\-\-Interaction\-\_\-\-Iso@{Construct\-\_\-\-Interaction\-\_\-\-Iso}}
+\index{Construct\-\_\-\-Interaction\-\_\-\-Iso@{Construct\-\_\-\-Interaction\-\_\-\-Iso}!Interaction@{Interaction}}
+\subsubsection[{Construct\-\_\-\-Interaction\-\_\-\-Iso}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Interaction}$<$ T $>$\-::Construct\-\_\-\-Interaction\-\_\-\-Iso (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_ae6f2362eebdf933d63c8133328fbf0f7}
+
+
+Construct interaction in isospin representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\-B\-M\-E} & J scheme \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-B\-M\-E M scheme 
+\end{DoxyReturn}
+pp, nn interaction
+
+pn interaction 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_interaction_ae6f2362eebdf933d63c8133328fbf0f7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interaction_a42aceecb46825fe9c78b71a00f888206}{\index{Interaction@{Interaction}!Construct\-\_\-\-Interaction\-\_\-\-P\-N@{Construct\-\_\-\-Interaction\-\_\-\-P\-N}}
+\index{Construct\-\_\-\-Interaction\-\_\-\-P\-N@{Construct\-\_\-\-Interaction\-\_\-\-P\-N}!Interaction@{Interaction}}
+\subsubsection[{Construct\-\_\-\-Interaction\-\_\-\-P\-N}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Interaction}$<$ T $>$\-::Construct\-\_\-\-Interaction\-\_\-\-P\-N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_a42aceecb46825fe9c78b71a00f888206}
+
+
+Construct interaction in proton-\/neutron representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T\-B\-M\-E} & J scheme \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-B\-M\-E M scheme 
+\end{DoxyReturn}
+pp, nn interaction
+
+pn interaction
+
+if(oa==ob) fact$\ast$=sqrt(2.\-0); if(oc==od) fact$\ast$=sqrt(2.\-0);
+
+!!!5 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_interaction_a42aceecb46825fe9c78b71a00f888206_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interaction_a68bde2a8a674f54a8f42cd992e96b907}{\index{Interaction@{Interaction}!pack@{pack}}
+\index{pack@{pack}!Interaction@{Interaction}}
+\subsubsection[{pack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Interaction}$<$ T $>$\-::pack (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{int}]{k, }
+\item[{int}]{l, }
+\item[{int \&}]{num}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_a68bde2a8a674f54a8f42cd992e96b907}
+\hypertarget{class_interaction_a467419c63d4d647ad219f7b46b6afed5}{\index{Interaction@{Interaction}!Read\-\_\-\-Interaction\-\_\-\-Iso@{Read\-\_\-\-Interaction\-\_\-\-Iso}}
+\index{Read\-\_\-\-Interaction\-\_\-\-Iso@{Read\-\_\-\-Interaction\-\_\-\-Iso}!Interaction@{Interaction}}
+\subsubsection[{Read\-\_\-\-Interaction\-\_\-\-Iso}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Interaction}$<$ T $>$\-::Read\-\_\-\-Interaction\-\_\-\-Iso (
+\begin{DoxyParamCaption}
+\item[{string}]{M\-E}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_a467419c63d4d647ad219f7b46b6afed5}
+
+
+Read O\-B\-M\-E and T\-B\-M\-E in isospin representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Martrix\-Elements} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O\-B\-M\-E 
+
+T\-B\-M\-E J scheme 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interaction_a467419c63d4d647ad219f7b46b6afed5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interaction_a96b36b6eab380437ba94585a5ac2a31b}{\index{Interaction@{Interaction}!Read\-\_\-\-Interaction\-\_\-\-P\-N@{Read\-\_\-\-Interaction\-\_\-\-P\-N}}
+\index{Read\-\_\-\-Interaction\-\_\-\-P\-N@{Read\-\_\-\-Interaction\-\_\-\-P\-N}!Interaction@{Interaction}}
+\subsubsection[{Read\-\_\-\-Interaction\-\_\-\-P\-N}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Interaction}$<$ T $>$\-::Read\-\_\-\-Interaction\-\_\-\-P\-N (
+\begin{DoxyParamCaption}
+\item[{string}]{M\-E}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_a96b36b6eab380437ba94585a5ac2a31b}
+
+
+Read O\-B\-M\-E and T\-B\-M\-E in proton-\/neutron representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Martrix\-Elements} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O\-B\-M\-E 
+
+T\-B\-M\-E J scheme 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interaction_a96b36b6eab380437ba94585a5ac2a31b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interaction_a5215914c0464c733a6c140a814b48513}{\index{Interaction@{Interaction}!Read\-\_\-\-Orbit\-\_\-\-Iso@{Read\-\_\-\-Orbit\-\_\-\-Iso}}
+\index{Read\-\_\-\-Orbit\-\_\-\-Iso@{Read\-\_\-\-Orbit\-\_\-\-Iso}!Interaction@{Interaction}}
+\subsubsection[{Read\-\_\-\-Orbit\-\_\-\-Iso}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Interaction}$<$ T $>$\-::Read\-\_\-\-Orbit\-\_\-\-Iso (
+\begin{DoxyParamCaption}
+\item[{string}]{space}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_a5215914c0464c733a6c140a814b48513}
+
+
+Read J orbit in isospin representation. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_j___orbit}{J\-\_\-\-Orbit} 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interaction_a5215914c0464c733a6c140a814b48513_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interaction_a6df2e9326e87a957cf6efd63e3188cf7}{\index{Interaction@{Interaction}!Read\-\_\-\-Orbit\-\_\-\-P\-N@{Read\-\_\-\-Orbit\-\_\-\-P\-N}}
+\index{Read\-\_\-\-Orbit\-\_\-\-P\-N@{Read\-\_\-\-Orbit\-\_\-\-P\-N}!Interaction@{Interaction}}
+\subsubsection[{Read\-\_\-\-Orbit\-\_\-\-P\-N}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Interaction}$<$ T $>$\-::Read\-\_\-\-Orbit\-\_\-\-P\-N (
+\begin{DoxyParamCaption}
+\item[{string}]{space}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_a6df2e9326e87a957cf6efd63e3188cf7}
+
+
+Read J orbit in proton-\/neutron representation. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_j___orbit}{J\-\_\-\-Orbit} 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interaction_a6df2e9326e87a957cf6efd63e3188cf7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interaction_ae16c26ed612f825cfa114b0ca9a4fbc2}{\index{Interaction@{Interaction}!Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-Iso@{Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-Iso}}
+\index{Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-Iso@{Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-Iso}!Interaction@{Interaction}}
+\subsubsection[{Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-Iso}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Interaction}$<$ T $>$\-::Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-Iso (
+\begin{DoxyParamCaption}
+\item[{{\bf J\-\_\-\-Orbit} $\ast$}]{Jstates, }
+\item[{int}]{dim, }
+\item[{{\bf Coupled\-\_\-\-State} $\ast$}]{vtbme}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_ae16c26ed612f825cfa114b0ca9a4fbc2}
+
+
+Setup T\-B\-M\-E and uncoupled states in isospin representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_j___orbit}{J\-\_\-\-Orbit}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-B\-M\-E space 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interaction_ae16c26ed612f825cfa114b0ca9a4fbc2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interaction_a34f5f4258d6b5acb0cb228ff82855ed6}{\index{Interaction@{Interaction}!Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-P\-N@{Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-P\-N}}
+\index{Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-P\-N@{Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-P\-N}!Interaction@{Interaction}}
+\subsubsection[{Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-P\-N}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Interaction}$<$ T $>$\-::Setup\-\_\-\-Uncoupled\-\_\-\-States\-\_\-\-P\-N (
+\begin{DoxyParamCaption}
+\item[{{\bf J\-\_\-\-Orbit} $\ast$$\ast$}]{Jstates, }
+\item[{int $\ast$}]{dim, }
+\item[{{\bf Coupled\-\_\-\-State} $\ast$}]{vtbme}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_a34f5f4258d6b5acb0cb228ff82855ed6}
+
+
+Setup T\-B\-M\-E and uncoupled states in proton-\/neutron representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_j___orbit}{J\-\_\-\-Orbit}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\-B\-M\-E space 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interaction_a34f5f4258d6b5acb0cb228ff82855ed6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_interaction_a906559736b06d72e49244436e8dfad0d}{\index{Interaction@{Interaction}!unpack@{unpack}}
+\index{unpack@{unpack}!Interaction@{Interaction}}
+\subsubsection[{unpack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Interaction}$<$ T $>$\-::unpack (
+\begin{DoxyParamCaption}
+\item[{int}]{num, }
+\item[{int \&}]{i, }
+\item[{int \&}]{j, }
+\item[{int \&}]{k, }
+\item[{int \&}]{l}
+\end{DoxyParamCaption}
+)}}\label{class_interaction_a906559736b06d72e49244436e8dfad0d}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_interaction_a906559736b06d72e49244436e8dfad0d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_interaction_ae169b32f8b692bdf54bdae97c2f395be}{\index{Interaction@{Interaction}!Dimension\-\_\-\-J@{Dimension\-\_\-\-J}}
+\index{Dimension\-\_\-\-J@{Dimension\-\_\-\-J}!Interaction@{Interaction}}
+\subsubsection[{Dimension\-\_\-\-J}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ int {\bf Interaction}$<$ T $>$\-::Dimension\-\_\-\-J\mbox{[}{\bf Iso\-Spin\-\_\-\-Z}\mbox{]}}}\label{class_interaction_ae169b32f8b692bdf54bdae97c2f395be}
+\hypertarget{class_interaction_afef136dd95339bef3a8c5e8488f6455f}{\index{Interaction@{Interaction}!Dimension\-\_\-\-M@{Dimension\-\_\-\-M}}
+\index{Dimension\-\_\-\-M@{Dimension\-\_\-\-M}!Interaction@{Interaction}}
+\subsubsection[{Dimension\-\_\-\-M}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ int {\bf Interaction}$<$ T $>$\-::Dimension\-\_\-\-M\mbox{[}{\bf Iso\-Spin\-\_\-\-Z}\mbox{]}}}\label{class_interaction_afef136dd95339bef3a8c5e8488f6455f}
+\hypertarget{class_interaction_afd1f26a552c012f6444e02a0f2718388}{\index{Interaction@{Interaction}!hbar\-\_\-omiga@{hbar\-\_\-omiga}}
+\index{hbar\-\_\-omiga@{hbar\-\_\-omiga}!Interaction@{Interaction}}
+\subsubsection[{hbar\-\_\-omiga}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ double {\bf Interaction}$<$ T $>$\-::hbar\-\_\-omiga\hspace{0.3cm}{\ttfamily [private]}}}\label{class_interaction_afd1f26a552c012f6444e02a0f2718388}
+\hypertarget{class_interaction_acfc6941cb6a85c4368855da6503a892f}{\index{Interaction@{Interaction}!index@{index}}
+\index{index@{index}!Interaction@{Interaction}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ ivec {\bf Interaction}$<$ T $>$\-::index\mbox{[}{\bf Iso\-Spin\-\_\-\-Z}+1\mbox{]}}}\label{class_interaction_acfc6941cb6a85c4368855da6503a892f}
+\hypertarget{class_interaction_a067c62aec0e8fba647d5e5cefb13fadc}{\index{Interaction@{Interaction}!Iso\-Spin\-\_\-\-Z@{Iso\-Spin\-\_\-\-Z}}
+\index{Iso\-Spin\-\_\-\-Z@{Iso\-Spin\-\_\-\-Z}!Interaction@{Interaction}}
+\subsubsection[{Iso\-Spin\-\_\-\-Z}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ const int {\bf Interaction}$<$ T $>$\-::Iso\-Spin\-\_\-\-Z = 2\hspace{0.3cm}{\ttfamily [static]}}}\label{class_interaction_a067c62aec0e8fba647d5e5cefb13fadc}
+\hypertarget{class_interaction_a42d5c1378bd17f7755424f7ab5702ef6}{\index{Interaction@{Interaction}!J\-\_\-scheme@{J\-\_\-scheme}}
+\index{J\-\_\-scheme@{J\-\_\-scheme}!Interaction@{Interaction}}
+\subsubsection[{J\-\_\-scheme}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf J\-\_\-\-Orbit}$\ast$ {\bf Interaction}$<$ T $>$\-::J\-\_\-scheme\mbox{[}{\bf Iso\-Spin\-\_\-\-Z}\mbox{]}}}\label{class_interaction_a42d5c1378bd17f7755424f7ab5702ef6}
+\hypertarget{class_interaction_ad29cbf9eca392e71958932cef5f7bf66}{\index{Interaction@{Interaction}!M\-\_\-scheme@{M\-\_\-scheme}}
+\index{M\-\_\-scheme@{M\-\_\-scheme}!Interaction@{Interaction}}
+\subsubsection[{M\-\_\-scheme}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf M\-\_\-\-State}$\ast$ {\bf Interaction}$<$ T $>$\-::M\-\_\-scheme\mbox{[}{\bf Iso\-Spin\-\_\-\-Z}\mbox{]}}}\label{class_interaction_ad29cbf9eca392e71958932cef5f7bf66}
+\hypertarget{class_interaction_a5a8eceab2bed942ec46d581b4cd4a661}{\index{Interaction@{Interaction}!Mass\-\_\-\-Num@{Mass\-\_\-\-Num}}
+\index{Mass\-\_\-\-Num@{Mass\-\_\-\-Num}!Interaction@{Interaction}}
+\subsubsection[{Mass\-\_\-\-Num}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ int {\bf Interaction}$<$ T $>$\-::Mass\-\_\-\-Num\hspace{0.3cm}{\ttfamily [private]}}}\label{class_interaction_a5a8eceab2bed942ec46d581b4cd4a661}
+\hypertarget{class_interaction_ad629df71841bfb02116616b2f4764811}{\index{Interaction@{Interaction}!O\-B\-M\-E@{O\-B\-M\-E}}
+\index{O\-B\-M\-E@{O\-B\-M\-E}!Interaction@{Interaction}}
+\subsubsection[{O\-B\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ Mat$<$T$>$ {\bf Interaction}$<$ T $>$\-::O\-B\-M\-E\mbox{[}{\bf Iso\-Spin\-\_\-\-Z}\mbox{]}}}\label{class_interaction_ad629df71841bfb02116616b2f4764811}
+\hypertarget{class_interaction_aafd4ee901de0d1463b71f89294b4b3f5}{\index{Interaction@{Interaction}!Orbit@{Orbit}}
+\index{Orbit@{Orbit}!Interaction@{Interaction}}
+\subsubsection[{Orbit}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Coupled\-\_\-\-State}$\ast$ {\bf Interaction}$<$ T $>$\-::Orbit\hspace{0.3cm}{\ttfamily [private]}}}\label{class_interaction_aafd4ee901de0d1463b71f89294b4b3f5}
+\hypertarget{class_interaction_ac7b745819fe9b13f3df3bd7750eceb97}{\index{Interaction@{Interaction}!T\-B\-M\-E@{T\-B\-M\-E}}
+\index{T\-B\-M\-E@{T\-B\-M\-E}!Interaction@{Interaction}}
+\subsubsection[{T\-B\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ Col$<$T$>$ {\bf Interaction}$<$ T $>$\-::T\-B\-M\-E\mbox{[}{\bf Iso\-Spin\-\_\-\-Z}+1\mbox{]}}}\label{class_interaction_ac7b745819fe9b13f3df3bd7750eceb97}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{main_8cpp}{main.\-cpp}\end{DoxyCompactItemize}

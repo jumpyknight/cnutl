@@ -1,0 +1,737 @@
+\hypertarget{class_hartree_fock}{\section{Hartree\-Fock Class Reference}
+\label{class_hartree_fock}\index{Hartree\-Fock@{Hartree\-Fock}}
+}
+
+
+Collaboration diagram for Hartree\-Fock\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hartree_fock_a0138ea06db729472531ba768af7d0f4f}{Hartree\-Fock} (int Z, int A, string space, string force)
+\item 
+\hyperlink{class_hartree_fock_a82ad40272840da4287b9a602415beac4}{$\sim$\-Hartree\-Fock} ()
+\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\void \hyperlink{class_hartree_fock_a455afd726ee175800c437ac957fab978}{Density\-\_\-\-Matrix} (T1 \&psil, T2 \&psir, cx\-\_\-mat \&rhoij, cx\-\_\-double \&overlap)
+\begin{DoxyCompactList}\small\item\em Subroutine to compute rho(i,j) for two S\-D's that are not orthogonal using a matrix representation. \end{DoxyCompactList}\item 
+void \hyperlink{class_hartree_fock_a489618a047bfb88057bd50d73d79c2e3}{Mean\-\_\-\-Field} (ivec $\ast$index, vec $\ast$tbme, cx\-\_\-mat $\ast$rhoij, cx\-\_\-mat $\ast$gamma)
+\begin{DoxyCompactList}\small\item\em Calculates mean-\/field matrix. \end{DoxyCompactList}\item 
+void \hyperlink{class_hartree_fock_af85bdddebed73f27c2b883c2d9e8972e}{Hamiltonian\-\_\-sp} (mat \&e\-\_\-sp, cx\-\_\-mat \&gamma, cx\-\_\-mat \&ham)
+\begin{DoxyCompactList}\small\item\em Calculates matrix h=T+\-Gamma. \end{DoxyCompactList}\item 
+cx\-\_\-double \hyperlink{class_hartree_fock_accb7866bf87089908210f64157668914}{Hamiltonian} (mat $\ast$e\-\_\-sp, ivec $\ast$index, vec $\ast$tbme, cx\-\_\-mat $\ast$rhoij, cx\-\_\-double $\ast$overlap)
+\begin{DoxyCompactList}\small\item\em $<$ psil $|$ H $|$ psir $>$ \end{DoxyCompactList}\item 
+void \hyperlink{class_hartree_fock_a78d4a33402c7d999286bdc164cc853b5}{Diagonalization} ()
+\begin{DoxyCompactList}\small\item\em Diagonlization single particle Harmiltonian. \end{DoxyCompactList}\item 
+void \hyperlink{class_hartree_fock_a727be4c17f68c9ce3cbfcaae6f97e752}{Initialization} ()
+\begin{DoxyCompactList}\small\item\em Initialize the H\-F wavefunction. \end{DoxyCompactList}\item 
+void \hyperlink{class_hartree_fock_a0ae03c7ead906063143f0047d32f1ee1}{Iteration} ()
+\item 
+void \hyperlink{class_hartree_fock_a1d8f2d0c9841c8b999fa31758b059214}{Broyden} (cx\-\_\-mat $\ast$m)
+\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\void \hyperlink{class_hartree_fock_a6e1d4d4e338a2d55746543a230035121}{Rotation} (double alpha, double beta, double gamma, T1 \&src, T2 \&dest, \hyperlink{class_j___orbit}{J\-\_\-\-Orbit} $\ast$jscheme, \hyperlink{class_m___state}{M\-\_\-\-State} $\ast$mscheme, int dim)
+\begin{DoxyCompactList}\small\item\em Rotate a state. \end{DoxyCompactList}\item 
+void \hyperlink{class_hartree_fock_af5b3a51f8b65bdda59845648a4865d80}{Space\-\_\-\-Inversion} (cx\-\_\-mat \&src, cx\-\_\-mat \&dest, \hyperlink{class_m___state}{M\-\_\-\-State} $\ast$mscheme)
+\begin{DoxyCompactList}\small\item\em Parity projection. \end{DoxyCompactList}\item 
+void \hyperlink{class_hartree_fock_a83bfa55f6be64c2b678df42801594e52}{A\-M\-P} (cx\-\_\-mat $\ast$psil, cx\-\_\-mat $\ast$psir, vec \&J, vec \&Parity, cx\-\_\-vec \&H, cx\-\_\-vec \&N)
+\begin{DoxyCompactList}\small\item\em Angular momentum projection. \end{DoxyCompactList}\item 
+cx\-\_\-double \hyperlink{class_hartree_fock_a19fc02314568b45713933525cf62f11c}{Construct\-\_\-\-M\-E} (ivec \&psil, ivec \&psir)
+\item 
+void \hyperlink{class_hartree_fock_a14aa8c8c8fff19eb82609abc7fb24958}{H\-W\-\_\-\-Equation\-\_\-\-Hermitian} (cx\-\_\-mat \&A, cx\-\_\-mat \&B, vec \&val, cx\-\_\-mat \&wf)
+\item 
+void \hyperlink{class_hartree_fock_a36141675bcd557c4241e82b9bf964577}{D\-B\-P} ()
+\item 
+int \hyperlink{class_hartree_fock_a2cb43d38447325572989595370320706}{pack} (ivec \&config)
+\item 
+ivec \hyperlink{class_hartree_fock_a65f76efc9fb81e474af5985c52861e0d}{unpack} (int config)
+\item 
+int \hyperlink{class_hartree_fock_af0c009ecdaf0308740355bc6c2482bc2}{Count\-\_\-\-Particle} (int config)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_interaction}{Interaction}$<$ double $>$ \hyperlink{class_hartree_fock_a4a6514cfef19a943db8cb06b245b2f93}{M\-E}
+\item 
+\hyperlink{class_interaction}{Interaction}$<$ cx\-\_\-double $>$ \hyperlink{class_hartree_fock_abfd928be86a6d127aff8d8c928d30695}{M\-E\-\_\-\-H\-F}
+\item 
+int \hyperlink{class_hartree_fock_a18404222b2f400fb9c9985e0b7c7e664}{Mass\-Number} \mbox{[}\hyperlink{class_interaction}{Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z+1\mbox{]}
+\item 
+cx\-\_\-mat \hyperlink{class_hartree_fock_a1f460784edc46e9b41d4ea047ef3a3a1}{rho} \mbox{[}\hyperlink{class_interaction}{Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}
+\item 
+cx\-\_\-mat \hyperlink{class_hartree_fock_a7e7361a6e064c9983b0e263f250dd615}{bra} \mbox{[}\hyperlink{class_interaction}{Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}
+\item 
+cx\-\_\-mat \hyperlink{class_hartree_fock_a78ba84d83058ad9c7db287beebb154d4}{ket} \mbox{[}\hyperlink{class_interaction}{Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}
+\item 
+cx\-\_\-mat \hyperlink{class_hartree_fock_a0362bdcdbf5969097be8c03576639e53}{V\-\_\-mf} \mbox{[}\hyperlink{class_interaction}{Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}
+\item 
+cx\-\_\-mat \hyperlink{class_hartree_fock_a4cd7c0aece3eec0c593638763f846d36}{H\-\_\-sp} \mbox{[}\hyperlink{class_interaction}{Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}
+\item 
+vec \hyperlink{class_hartree_fock_a1bb866f2ea89dc0d44f70e1d8e6b1425}{E\-\_\-sp} \mbox{[}\hyperlink{class_interaction}{Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}
+\item 
+double \hyperlink{class_hartree_fock_ae654600f841836c3cb98abee72bf6c35}{B\-E}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_hartree_fock_a645d83d6370a8adf666416d08c846ddd}{Nucleus}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_hartree_fock_a0138ea06db729472531ba768af7d0f4f}{\index{Hartree\-Fock@{Hartree\-Fock}!Hartree\-Fock@{Hartree\-Fock}}
+\index{Hartree\-Fock@{Hartree\-Fock}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Hartree\-Fock}]{\setlength{\rightskip}{0pt plus 5cm}Hartree\-Fock\-::\-Hartree\-Fock (
+\begin{DoxyParamCaption}
+\item[{int}]{Z, }
+\item[{int}]{A, }
+\item[{string}]{space, }
+\item[{string}]{force}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a0138ea06db729472531ba768af7d0f4f}
+\hypertarget{class_hartree_fock_a82ad40272840da4287b9a602415beac4}{\index{Hartree\-Fock@{Hartree\-Fock}!$\sim$\-Hartree\-Fock@{$\sim$\-Hartree\-Fock}}
+\index{$\sim$\-Hartree\-Fock@{$\sim$\-Hartree\-Fock}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{$\sim$\-Hartree\-Fock}]{\setlength{\rightskip}{0pt plus 5cm}Hartree\-Fock\-::$\sim$\-Hartree\-Fock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_hartree_fock_a82ad40272840da4287b9a602415beac4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hartree_fock_a83bfa55f6be64c2b678df42801594e52}{\index{Hartree\-Fock@{Hartree\-Fock}!A\-M\-P@{A\-M\-P}}
+\index{A\-M\-P@{A\-M\-P}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{A\-M\-P}]{\setlength{\rightskip}{0pt plus 5cm}void Hartree\-Fock\-::\-A\-M\-P (
+\begin{DoxyParamCaption}
+\item[{cx\-\_\-mat $\ast$}]{psil, }
+\item[{cx\-\_\-mat $\ast$}]{psir, }
+\item[{vec \&}]{J, }
+\item[{vec \&}]{Parity, }
+\item[{cx\-\_\-vec \&}]{H, }
+\item[{cx\-\_\-vec \&}]{N}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a83bfa55f6be64c2b678df42801594e52}
+
+
+Angular momentum projection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Bra\-\_\-\-W\-F} & \\
+\hline
+{\em Ket\-\_\-\-W\-F} & \\
+\hline
+{\em J} & angular momentum \\
+\hline
+{\em P} & parity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Hamiltonian 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a83bfa55f6be64c2b678df42801594e52_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a83bfa55f6be64c2b678df42801594e52_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_a1d8f2d0c9841c8b999fa31758b059214}{\index{Hartree\-Fock@{Hartree\-Fock}!Broyden@{Broyden}}
+\index{Broyden@{Broyden}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Broyden}]{\setlength{\rightskip}{0pt plus 5cm}void Hartree\-Fock\-::\-Broyden (
+\begin{DoxyParamCaption}
+\item[{cx\-\_\-mat $\ast$}]{m}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a1d8f2d0c9841c8b999fa31758b059214}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a1d8f2d0c9841c8b999fa31758b059214_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_a19fc02314568b45713933525cf62f11c}{\index{Hartree\-Fock@{Hartree\-Fock}!Construct\-\_\-\-M\-E@{Construct\-\_\-\-M\-E}}
+\index{Construct\-\_\-\-M\-E@{Construct\-\_\-\-M\-E}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Construct\-\_\-\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}cx\-\_\-double Hartree\-Fock\-::\-Construct\-\_\-\-M\-E (
+\begin{DoxyParamCaption}
+\item[{ivec \&}]{psil, }
+\item[{ivec \&}]{psir}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a19fc02314568b45713933525cf62f11c}
+pp, nn interaction
+
+pn interaction
+
+pp, nn interaction
+
+!!!0.5$\ast$phase$\ast$phase2$\ast$\-M\-E\-\_\-\-H\-F.T\-B\-M\-E\mbox{[}pn\mbox{]}(n);
+
+pn interaction
+
+!!!0.5$\ast$phase$\ast$\-M\-E\-\_\-\-H\-F.T\-B\-M\-E\mbox{[}iso\mbox{]}(n);
+
+pn interaction
+
+!!!0.5$\ast$phase$\ast$\-M\-E\-\_\-\-H\-F.T\-B\-M\-E\mbox{[}iso\mbox{]}(n);
+
+pp, nn interaction
+
+!!!0.5$\ast$phase$\ast$\-M\-E\-\_\-\-H\-F.T\-B\-M\-E\mbox{[}pn\mbox{]}(n); 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a19fc02314568b45713933525cf62f11c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_hartree_fock_a19fc02314568b45713933525cf62f11c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_af0c009ecdaf0308740355bc6c2482bc2}{\index{Hartree\-Fock@{Hartree\-Fock}!Count\-\_\-\-Particle@{Count\-\_\-\-Particle}}
+\index{Count\-\_\-\-Particle@{Count\-\_\-\-Particle}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Count\-\_\-\-Particle}]{\setlength{\rightskip}{0pt plus 5cm}int Hartree\-Fock\-::\-Count\-\_\-\-Particle (
+\begin{DoxyParamCaption}
+\item[{int}]{config}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_af0c009ecdaf0308740355bc6c2482bc2}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_af0c009ecdaf0308740355bc6c2482bc2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_a36141675bcd557c4241e82b9bf964577}{\index{Hartree\-Fock@{Hartree\-Fock}!D\-B\-P@{D\-B\-P}}
+\index{D\-B\-P@{D\-B\-P}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{D\-B\-P}]{\setlength{\rightskip}{0pt plus 5cm}void Hartree\-Fock\-::\-D\-B\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a36141675bcd557c4241e82b9bf964577}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a36141675bcd557c4241e82b9bf964577_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_a455afd726ee175800c437ac957fab978}{\index{Hartree\-Fock@{Hartree\-Fock}!Density\-\_\-\-Matrix@{Density\-\_\-\-Matrix}}
+\index{Density\-\_\-\-Matrix@{Density\-\_\-\-Matrix}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Density\-\_\-\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T1 , typename T2 $>$ void Hartree\-Fock\-::\-Density\-\_\-\-Matrix (
+\begin{DoxyParamCaption}
+\item[{T1 \&}]{psil, }
+\item[{T2 \&}]{psir, }
+\item[{cx\-\_\-mat \&}]{rhoij, }
+\item[{cx\-\_\-double \&}]{overlap}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a455afd726ee175800c437ac957fab978}
+
+
+Subroutine to compute rho(i,j) for two S\-D's that are not orthogonal using a matrix representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em psir} & right S\-D \\
+\hline
+{\em psil} & left S\-D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rhoij\-: density matrix $<$ psil $|$ a$^\wedge$ a\-\_\-j $|$ psir $>$ 
+
+overlap\-: $<$ psil $|$ psir $>$ 
+\end{DoxyReturn}
+!!!!!! S\-V\-D may be more suitable 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a455afd726ee175800c437ac957fab978_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_a78d4a33402c7d999286bdc164cc853b5}{\index{Hartree\-Fock@{Hartree\-Fock}!Diagonalization@{Diagonalization}}
+\index{Diagonalization@{Diagonalization}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Diagonalization}]{\setlength{\rightskip}{0pt plus 5cm}void Hartree\-Fock\-::\-Diagonalization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a78d4a33402c7d999286bdc164cc853b5}
+
+
+Diagonlization single particle Harmiltonian. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Hamiltonian\-\_\-sp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Energies 
+
+Wavefunctions 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a78d4a33402c7d999286bdc164cc853b5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a78d4a33402c7d999286bdc164cc853b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_accb7866bf87089908210f64157668914}{\index{Hartree\-Fock@{Hartree\-Fock}!Hamiltonian@{Hamiltonian}}
+\index{Hamiltonian@{Hamiltonian}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Hamiltonian}]{\setlength{\rightskip}{0pt plus 5cm}cx\-\_\-double Hartree\-Fock\-::\-Hamiltonian (
+\begin{DoxyParamCaption}
+\item[{mat $\ast$}]{e\-\_\-sp, }
+\item[{ivec $\ast$}]{index, }
+\item[{vec $\ast$}]{tbme, }
+\item[{cx\-\_\-mat $\ast$}]{rhoij, }
+\item[{cx\-\_\-double $\ast$}]{overlap}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_accb7866bf87089908210f64157668914}
+
+
+$<$ psil $|$ H $|$ psir $>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\-\_\-sp(i,j)} & one-\/body matrix element between i,j m-\/states \\
+\hline
+{\em Index(i)} & list of (packed) nonzero indices, i = 1 to nmatpp to get indices I\-J\-K\-L of i'th matrix element do U\-N\-P\-A\-C\-K(\-Index) \\
+\hline
+{\em T\-B\-M\-E(i)} & ith T\-B\-M\-E associated with indices unpacked from Index(i) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rhoij density matrix $<$ psil $|$ a$^\wedge$ a\-\_\-j $|$ psir $>$ 
+
+$<$ psil $|$ H $|$ psir $>$ 
+\end{DoxyReturn}
+O\-B\-M\-E
+
+pp, nn interaction
+
+pn interaction 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_hartree_fock_accb7866bf87089908210f64157668914_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_accb7866bf87089908210f64157668914_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_af85bdddebed73f27c2b883c2d9e8972e}{\index{Hartree\-Fock@{Hartree\-Fock}!Hamiltonian\-\_\-sp@{Hamiltonian\-\_\-sp}}
+\index{Hamiltonian\-\_\-sp@{Hamiltonian\-\_\-sp}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Hamiltonian\-\_\-sp}]{\setlength{\rightskip}{0pt plus 5cm}void Hartree\-Fock\-::\-Hamiltonian\-\_\-sp (
+\begin{DoxyParamCaption}
+\item[{mat \&}]{e\-\_\-sp, }
+\item[{cx\-\_\-mat \&}]{gamma, }
+\item[{cx\-\_\-mat \&}]{ham}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_af85bdddebed73f27c2b883c2d9e8972e}
+
+
+Calculates matrix h=T+\-Gamma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\-\_\-sp(i,j)} & one-\/body matrix element between i,j m-\/states \\
+\hline
+{\em gamma} & Gamma matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Hamiltonian\-\_\-sp 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_af85bdddebed73f27c2b883c2d9e8972e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_a14aa8c8c8fff19eb82609abc7fb24958}{\index{Hartree\-Fock@{Hartree\-Fock}!H\-W\-\_\-\-Equation\-\_\-\-Hermitian@{H\-W\-\_\-\-Equation\-\_\-\-Hermitian}}
+\index{H\-W\-\_\-\-Equation\-\_\-\-Hermitian@{H\-W\-\_\-\-Equation\-\_\-\-Hermitian}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{H\-W\-\_\-\-Equation\-\_\-\-Hermitian}]{\setlength{\rightskip}{0pt plus 5cm}void Hartree\-Fock\-::\-H\-W\-\_\-\-Equation\-\_\-\-Hermitian (
+\begin{DoxyParamCaption}
+\item[{cx\-\_\-mat \&}]{A, }
+\item[{cx\-\_\-mat \&}]{B, }
+\item[{vec \&}]{val, }
+\item[{cx\-\_\-mat \&}]{wf}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a14aa8c8c8fff19eb82609abc7fb24958}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a14aa8c8c8fff19eb82609abc7fb24958_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_a727be4c17f68c9ce3cbfcaae6f97e752}{\index{Hartree\-Fock@{Hartree\-Fock}!Initialization@{Initialization}}
+\index{Initialization@{Initialization}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Initialization}]{\setlength{\rightskip}{0pt plus 5cm}void Hartree\-Fock\-::\-Initialization (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a727be4c17f68c9ce3cbfcaae6f97e752}
+
+
+Initialize the H\-F wavefunction. 
+
+\begin{DoxyReturn}{Returns}
+Bra\-\_\-\-W\-F 
+
+Ket\-\_\-\-W\-F 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a727be4c17f68c9ce3cbfcaae6f97e752_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_a0ae03c7ead906063143f0047d32f1ee1}{\index{Hartree\-Fock@{Hartree\-Fock}!Iteration@{Iteration}}
+\index{Iteration@{Iteration}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Iteration}]{\setlength{\rightskip}{0pt plus 5cm}void Hartree\-Fock\-::\-Iteration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a0ae03c7ead906063143f0047d32f1ee1}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a0ae03c7ead906063143f0047d32f1ee1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a0ae03c7ead906063143f0047d32f1ee1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_a489618a047bfb88057bd50d73d79c2e3}{\index{Hartree\-Fock@{Hartree\-Fock}!Mean\-\_\-\-Field@{Mean\-\_\-\-Field}}
+\index{Mean\-\_\-\-Field@{Mean\-\_\-\-Field}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Mean\-\_\-\-Field}]{\setlength{\rightskip}{0pt plus 5cm}void Hartree\-Fock\-::\-Mean\-\_\-\-Field (
+\begin{DoxyParamCaption}
+\item[{ivec $\ast$}]{index, }
+\item[{vec $\ast$}]{tbme, }
+\item[{cx\-\_\-mat $\ast$}]{rhoij, }
+\item[{cx\-\_\-mat $\ast$}]{gamma}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a489618a047bfb88057bd50d73d79c2e3}
+
+
+Calculates mean-\/field matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Index(i)} & list of (packed) nonzero indices, i = 1 to nmatpp to get indices I\-J\-K\-L of i'th matrix element do U\-N\-P\-A\-C\-K(\-Index) \\
+\hline
+{\em T\-B\-M\-E(i)} & ith T\-B\-M\-E associated with indices unpacked from Index(i) \\
+\hline
+{\em rhopij/rhonij} & density matices for protons/neutrons \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+gammap/gamman\-: Gamma matrix for protons/neutrons 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_hartree_fock_a489618a047bfb88057bd50d73d79c2e3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a489618a047bfb88057bd50d73d79c2e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_a2cb43d38447325572989595370320706}{\index{Hartree\-Fock@{Hartree\-Fock}!pack@{pack}}
+\index{pack@{pack}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{pack}]{\setlength{\rightskip}{0pt plus 5cm}int Hartree\-Fock\-::pack (
+\begin{DoxyParamCaption}
+\item[{ivec \&}]{config}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a2cb43d38447325572989595370320706}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_hartree_fock_a2cb43d38447325572989595370320706_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_a6e1d4d4e338a2d55746543a230035121}{\index{Hartree\-Fock@{Hartree\-Fock}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Rotation}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T1 , typename T2 $>$ void Hartree\-Fock\-::\-Rotation (
+\begin{DoxyParamCaption}
+\item[{double}]{alpha, }
+\item[{double}]{beta, }
+\item[{double}]{gamma, }
+\item[{T1 \&}]{src, }
+\item[{T2 \&}]{dest, }
+\item[{{\bf J\-\_\-\-Orbit} $\ast$}]{jscheme, }
+\item[{{\bf M\-\_\-\-State} $\ast$}]{mscheme, }
+\item[{int}]{dim}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a6e1d4d4e338a2d55746543a230035121}
+
+
+Rotate a state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Wavefunction} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rotated Wavefunction 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a6e1d4d4e338a2d55746543a230035121_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a6e1d4d4e338a2d55746543a230035121_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_af5b3a51f8b65bdda59845648a4865d80}{\index{Hartree\-Fock@{Hartree\-Fock}!Space\-\_\-\-Inversion@{Space\-\_\-\-Inversion}}
+\index{Space\-\_\-\-Inversion@{Space\-\_\-\-Inversion}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Space\-\_\-\-Inversion}]{\setlength{\rightskip}{0pt plus 5cm}void Hartree\-Fock\-::\-Space\-\_\-\-Inversion (
+\begin{DoxyParamCaption}
+\item[{cx\-\_\-mat \&}]{src, }
+\item[{cx\-\_\-mat \&}]{dest, }
+\item[{{\bf M\-\_\-\-State} $\ast$}]{mscheme}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_af5b3a51f8b65bdda59845648a4865d80}
+
+
+Parity projection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Wavefunction} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wavefunction with space inversed 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_af5b3a51f8b65bdda59845648a4865d80_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_hartree_fock_a65f76efc9fb81e474af5985c52861e0d}{\index{Hartree\-Fock@{Hartree\-Fock}!unpack@{unpack}}
+\index{unpack@{unpack}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{unpack}]{\setlength{\rightskip}{0pt plus 5cm}ivec Hartree\-Fock\-::unpack (
+\begin{DoxyParamCaption}
+\item[{int}]{config}
+\end{DoxyParamCaption}
+)}}\label{class_hartree_fock_a65f76efc9fb81e474af5985c52861e0d}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_hartree_fock_a65f76efc9fb81e474af5985c52861e0d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_hartree_fock_a645d83d6370a8adf666416d08c846ddd}{\index{Hartree\-Fock@{Hartree\-Fock}!Nucleus@{Nucleus}}
+\index{Nucleus@{Nucleus}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Nucleus}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Nucleus}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_hartree_fock_a645d83d6370a8adf666416d08c846ddd}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_hartree_fock_ae654600f841836c3cb98abee72bf6c35}{\index{Hartree\-Fock@{Hartree\-Fock}!B\-E@{B\-E}}
+\index{B\-E@{B\-E}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{B\-E}]{\setlength{\rightskip}{0pt plus 5cm}double Hartree\-Fock\-::\-B\-E\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hartree_fock_ae654600f841836c3cb98abee72bf6c35}
+\hypertarget{class_hartree_fock_a7e7361a6e064c9983b0e263f250dd615}{\index{Hartree\-Fock@{Hartree\-Fock}!bra@{bra}}
+\index{bra@{bra}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{bra}]{\setlength{\rightskip}{0pt plus 5cm}cx\-\_\-mat Hartree\-Fock\-::bra\mbox{[}{\bf Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hartree_fock_a7e7361a6e064c9983b0e263f250dd615}
+\hypertarget{class_hartree_fock_a1bb866f2ea89dc0d44f70e1d8e6b1425}{\index{Hartree\-Fock@{Hartree\-Fock}!E\-\_\-sp@{E\-\_\-sp}}
+\index{E\-\_\-sp@{E\-\_\-sp}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{E\-\_\-sp}]{\setlength{\rightskip}{0pt plus 5cm}vec Hartree\-Fock\-::\-E\-\_\-sp\mbox{[}{\bf Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hartree_fock_a1bb866f2ea89dc0d44f70e1d8e6b1425}
+\hypertarget{class_hartree_fock_a4cd7c0aece3eec0c593638763f846d36}{\index{Hartree\-Fock@{Hartree\-Fock}!H\-\_\-sp@{H\-\_\-sp}}
+\index{H\-\_\-sp@{H\-\_\-sp}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{H\-\_\-sp}]{\setlength{\rightskip}{0pt plus 5cm}cx\-\_\-mat Hartree\-Fock\-::\-H\-\_\-sp\mbox{[}{\bf Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hartree_fock_a4cd7c0aece3eec0c593638763f846d36}
+\hypertarget{class_hartree_fock_a78ba84d83058ad9c7db287beebb154d4}{\index{Hartree\-Fock@{Hartree\-Fock}!ket@{ket}}
+\index{ket@{ket}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{ket}]{\setlength{\rightskip}{0pt plus 5cm}cx\-\_\-mat Hartree\-Fock\-::ket\mbox{[}{\bf Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hartree_fock_a78ba84d83058ad9c7db287beebb154d4}
+\hypertarget{class_hartree_fock_a18404222b2f400fb9c9985e0b7c7e664}{\index{Hartree\-Fock@{Hartree\-Fock}!Mass\-Number@{Mass\-Number}}
+\index{Mass\-Number@{Mass\-Number}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{Mass\-Number}]{\setlength{\rightskip}{0pt plus 5cm}int Hartree\-Fock\-::\-Mass\-Number\mbox{[}{\bf Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z+1\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hartree_fock_a18404222b2f400fb9c9985e0b7c7e664}
+\hypertarget{class_hartree_fock_a4a6514cfef19a943db8cb06b245b2f93}{\index{Hartree\-Fock@{Hartree\-Fock}!M\-E@{M\-E}}
+\index{M\-E@{M\-E}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{M\-E}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interaction}$<$double$>$ Hartree\-Fock\-::\-M\-E\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hartree_fock_a4a6514cfef19a943db8cb06b245b2f93}
+\hypertarget{class_hartree_fock_abfd928be86a6d127aff8d8c928d30695}{\index{Hartree\-Fock@{Hartree\-Fock}!M\-E\-\_\-\-H\-F@{M\-E\-\_\-\-H\-F}}
+\index{M\-E\-\_\-\-H\-F@{M\-E\-\_\-\-H\-F}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{M\-E\-\_\-\-H\-F}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interaction}$<$cx\-\_\-double$>$ Hartree\-Fock\-::\-M\-E\-\_\-\-H\-F\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hartree_fock_abfd928be86a6d127aff8d8c928d30695}
+\hypertarget{class_hartree_fock_a1f460784edc46e9b41d4ea047ef3a3a1}{\index{Hartree\-Fock@{Hartree\-Fock}!rho@{rho}}
+\index{rho@{rho}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{rho}]{\setlength{\rightskip}{0pt plus 5cm}cx\-\_\-mat Hartree\-Fock\-::rho\mbox{[}{\bf Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hartree_fock_a1f460784edc46e9b41d4ea047ef3a3a1}
+\hypertarget{class_hartree_fock_a0362bdcdbf5969097be8c03576639e53}{\index{Hartree\-Fock@{Hartree\-Fock}!V\-\_\-mf@{V\-\_\-mf}}
+\index{V\-\_\-mf@{V\-\_\-mf}!HartreeFock@{Hartree\-Fock}}
+\subsubsection[{V\-\_\-mf}]{\setlength{\rightskip}{0pt plus 5cm}cx\-\_\-mat Hartree\-Fock\-::\-V\-\_\-mf\mbox{[}{\bf Interaction}$<$ double $>$\-::Iso\-Spin\-\_\-\-Z\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_hartree_fock_a0362bdcdbf5969097be8c03576639e53}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{main_8cpp}{main.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="struct_coupled___state" kind="struct" prot="public">
+    <compoundname>Coupled_State</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_coupled___state_1a7f995cca6b0a5bb41e30d9723e358887" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Coupled_State::orbit</definition>
+        <argsstring></argsstring>
+        <name>orbit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="166" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="166" bodyend="-1"/>
+        <referencedby refid="class_interaction_1ae16c26ed612f825cfa114b0ca9a4fbc2" compoundref="main_8cpp" startline="546" endline="585">Interaction&lt; T &gt;::Setup_Uncoupled_States_Iso</referencedby>
+        <referencedby refid="class_interaction_1a34f5f4258d6b5acb0cb228ff82855ed6" compoundref="main_8cpp" startline="588" endline="668">Interaction&lt; T &gt;::Setup_Uncoupled_States_PN</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_coupled___state_1a923e8978be136d1c09742c608914a00b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Coupled_State::jmax</definition>
+        <argsstring></argsstring>
+        <name>jmax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="167" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="167" bodyend="-1"/>
+        <referencedby refid="class_interaction_1ae16c26ed612f825cfa114b0ca9a4fbc2" compoundref="main_8cpp" startline="546" endline="585">Interaction&lt; T &gt;::Setup_Uncoupled_States_Iso</referencedby>
+        <referencedby refid="class_interaction_1a34f5f4258d6b5acb0cb228ff82855ed6" compoundref="main_8cpp" startline="588" endline="668">Interaction&lt; T &gt;::Setup_Uncoupled_States_PN</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_coupled___state_1a473ea496bd301f167432a8e61d6487bc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Coupled_State::jmin</definition>
+        <argsstring></argsstring>
+        <name>jmin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="168" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="168" bodyend="-1"/>
+        <referencedby refid="class_interaction_1ae16c26ed612f825cfa114b0ca9a4fbc2" compoundref="main_8cpp" startline="546" endline="585">Interaction&lt; T &gt;::Setup_Uncoupled_States_Iso</referencedby>
+        <referencedby refid="class_interaction_1a34f5f4258d6b5acb0cb228ff82855ed6" compoundref="main_8cpp" startline="588" endline="668">Interaction&lt; T &gt;::Setup_Uncoupled_States_PN</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_coupled___state_1a0cf310a6235dd6ff6d140b94717ca735" prot="public" static="no" mutable="no">
+        <type>vec</type>
+        <definition>vec Coupled_State::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="169" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="169" bodyend="-1"/>
+        <referencedby refid="class_interaction_1ae16c26ed612f825cfa114b0ca9a4fbc2" compoundref="main_8cpp" startline="546" endline="585">Interaction&lt; T &gt;::Setup_Uncoupled_States_Iso</referencedby>
+        <referencedby refid="class_interaction_1a34f5f4258d6b5acb0cb228ff82855ed6" compoundref="main_8cpp" startline="588" endline="668">Interaction&lt; T &gt;::Setup_Uncoupled_States_PN</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="165" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="164" bodyend="170"/>
+    <listofallmembers>
+      <member refid="struct_coupled___state_1a923e8978be136d1c09742c608914a00b" prot="public" virt="non-virtual"><scope>Coupled_State</scope><name>jmax</name></member>
+      <member refid="struct_coupled___state_1a473ea496bd301f167432a8e61d6487bc" prot="public" virt="non-virtual"><scope>Coupled_State</scope><name>jmin</name></member>
+      <member refid="struct_coupled___state_1a7f995cca6b0a5bb41e30d9723e358887" prot="public" virt="non-virtual"><scope>Coupled_State</scope><name>orbit</name></member>
+      <member refid="struct_coupled___state_1a0cf310a6235dd6ff6d140b94717ca735" prot="public" virt="non-virtual"><scope>Coupled_State</scope><name>v</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

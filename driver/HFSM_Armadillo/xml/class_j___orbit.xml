@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_j___orbit" kind="class" prot="public">
+    <compoundname>J_Orbit</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_j___orbit_1abbbbfd967a5f2d1de6e8a1dbd458ee65" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int J_Orbit::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="125" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="125" bodyend="-1"/>
+        <referencedby refid="class_interaction_1a5215914c0464c733a6c140a814b48513" compoundref="main_8cpp" startline="406" endline="453">Interaction&lt; T &gt;::Read_Orbit_Iso</referencedby>
+        <referencedby refid="class_interaction_1a6df2e9326e87a957cf6efd63e3188cf7" compoundref="main_8cpp" startline="456" endline="543">Interaction&lt; T &gt;::Read_Orbit_PN</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_j___orbit_1a975b5fff0c2c2f6366ff4b1cb6f867f3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int J_Orbit::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="126" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_j___orbit_1a4df41865c99b0ffd1560a388eb67ee44" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double J_Orbit::j</definition>
+        <argsstring></argsstring>
+        <name>j</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="127" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="127" bodyend="-1"/>
+        <referencedby refid="class_interaction_1ae16c26ed612f825cfa114b0ca9a4fbc2" compoundref="main_8cpp" startline="546" endline="585">Interaction&lt; T &gt;::Setup_Uncoupled_States_Iso</referencedby>
+        <referencedby refid="class_interaction_1a34f5f4258d6b5acb0cb228ff82855ed6" compoundref="main_8cpp" startline="588" endline="668">Interaction&lt; T &gt;::Setup_Uncoupled_States_PN</referencedby>
+        <referencedby refid="class_hartree_fock_1a6e1d4d4e338a2d55746543a230035121" compoundref="main_8cpp" startline="1725" endline="1755">HartreeFock::Rotation</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_j___orbit_1a48daa459ba3f355a29cae35c22c69354" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void J_Orbit::set</definition>
+        <argsstring>(int node, int orbit, double angular)</argsstring>
+        <name>set</name>
+        <param>
+          <type>int</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>orbit</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>angular</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="123" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="130" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="121" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="120" bodyend="128"/>
+    <listofallmembers>
+      <member refid="class_j___orbit_1a4df41865c99b0ffd1560a388eb67ee44" prot="public" virt="non-virtual"><scope>J_Orbit</scope><name>j</name></member>
+      <member refid="class_j___orbit_1a975b5fff0c2c2f6366ff4b1cb6f867f3" prot="public" virt="non-virtual"><scope>J_Orbit</scope><name>l</name></member>
+      <member refid="class_j___orbit_1abbbbfd967a5f2d1de6e8a1dbd458ee65" prot="public" virt="non-virtual"><scope>J_Orbit</scope><name>n</name></member>
+      <member refid="class_j___orbit_1a48daa459ba3f355a29cae35c22c69354" prot="public" virt="non-virtual"><scope>J_Orbit</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

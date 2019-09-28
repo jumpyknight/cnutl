@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_wigner___function" kind="class" prot="public">
+    <compoundname>Wigner_Function</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_wigner___function_1a9e5617cceb841b8a82275ac6ef3f6bcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Wigner_Function::Wigner_d_Matrix</definition>
+        <argsstring>(double j, double m1, double m2, double beta)</argsstring>
+        <name>Wigner_d_Matrix</name>
+        <param>
+          <type>double</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="98" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="102" bodyend="111"/>
+        <references refid="main_8cpp_1a15f6d1a273d95f84822a2c49fd2829ac" compoundref="main_8cpp" startline="62" endline="93">Jacobi</references>
+      </memberdef>
+      <memberdef kind="function" id="class_wigner___function_1a28e07d8d28a1f74ecf63384106444c19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>cx_double</type>
+        <definition>cx_double Wigner_Function::Wigner_D_Matrix</definition>
+        <argsstring>(double j, double m1, double m2, double alpha, double beta, double gamma)</argsstring>
+        <name>Wigner_D_Matrix</name>
+        <param>
+          <type>double</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="99" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="113" bodyend="116"/>
+        <referencedby refid="class_hartree_fock_1a6e1d4d4e338a2d55746543a230035121" compoundref="main_8cpp" startline="1725" endline="1755">HartreeFock::Rotation</referencedby>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">HartreeFock::AMP</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="96" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="95" bodyend="100"/>
+    <listofallmembers>
+      <member refid="class_wigner___function_1a9e5617cceb841b8a82275ac6ef3f6bcb" prot="public" virt="non-virtual"><scope>Wigner_Function</scope><name>Wigner_d_Matrix</name></member>
+      <member refid="class_wigner___function_1a28e07d8d28a1f74ecf63384106444c19" prot="public" virt="non-virtual"><scope>Wigner_Function</scope><name>Wigner_D_Matrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

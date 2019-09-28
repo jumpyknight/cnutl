@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(fonts/notosans-regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(fonts/notosans-bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noto Sans Italic'), local('NotoSans-Italic'), url(fonts/notosans-italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'), url(fonts/notosans-bold-italic.woff) format('woff');
+}
+
+
+body
+  {
+  font-family: "Noto Sans", "Trebuchet MS", "Droid Sans", sans-serif;
+  /* other possible fonts: Karla, Exo 2 */
+  color: #000000;
+  background-color: #FFFFFF;
+  /* font-size: 10pt; */
+  /* line-height: 120%; */
+  /* height: 110%; */
+  }
+
+/* In the above, "height: 110%;" is a hack for stylistic purposes.
+   It typically makes the browser place a scroll bar on the left,
+   thereby reducing the overall width of the page. This is necessary,
+   as some pages do not have enough content (height wise) to make
+   the scrollbar appear, while other pages are long enough to have
+   the scrollbar.  When content is centered for stylistic purposes,
+   the content on "short" pages will be in a different place than
+   the content on "long" pages. This can be visually annoying when
+   navigating from a "short" page to a "long" page, or vice versa.
+   Forcing the scrollbar to always appear removes this problem.
+*/  
+
+pre
+  {
+  font-family: "DejaVu Sans Mono", "Liberation Mono", "Andale Mono", "Bitstream Vera Sans Mono", "Luxi Mono", monospace;
+  font-size: smaller;
+  color: #666666;
+  }
+
+a
+  {
+  text-decoration: none;
+  color: #498c05;
+  }
+
+a:hover
+  {
+  text-decoration: underline;
+  color: #498c05;
+  }
+
+a.menu
+  {
+  text-decoration: none;
+  color: #A6A6A6;
+  }
+
+a.menu:hover
+  {
+  text-decoration: none;
+  color: #498c05;
+  }
+
+a.hidden, a.hidden:hover, a.hidden:active, a.hidden:link, a.hidden:visited
+  {
+  text-decoration: none;
+  border-bottom: 0px
+  }
+
+table
+  {
+  /* border: 1px solid #000; */
+  /* display: block; */
+  border-collapse: collapse;
+  }
+
+td.line
+  {
+  border-left: 2px solid rgb(204, 204, 204);
+  }
+
+.footertext
+  {
+  position: relative;
+  bottom: 0px;
+  }
+
+hr.greyline
+  {
+  color: rgb(204, 204, 204);
+  /* background-color: rgb(204, 204, 204); */
+  }
+
+
+#nobreak
+  {
+  white-space: nowrap;
+  } 
+
+.noindent
+  {
+  text-indent:    0px;
+  margin-left:    1ex;
+  margin-right:   0ex;
+  margin-top:     0ex;
+  margin-bottom:  0ex;
+  padding-left:   1ex;
+  padding-right:  0ex;
+  padding-top:    0ex;
+  padding-bottom: 0ex;
+  list-style:     disc;
+  }
