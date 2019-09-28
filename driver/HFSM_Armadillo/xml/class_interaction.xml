@@ -1,0 +1,640 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_interaction" kind="class" prot="public">
+    <compoundname>Interaction</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_interaction_1a067c62aec0e8fba647d5e5cefb13fadc" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Interaction&lt; T &gt;::IsoSpin_Z</definition>
+        <argsstring></argsstring>
+        <name>IsoSpin_Z</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="196" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="196" bodyend="-1"/>
+        <referencedby refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" compoundref="main_8cpp" startline="229" endline="258">Interaction&lt; T &gt;::Interaction</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_interaction_1afef136dd95339bef3a8c5e8488f6455f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Interaction&lt; T &gt;::Dimension_M[IsoSpin_Z]</definition>
+        <argsstring>[IsoSpin_Z]</argsstring>
+        <name>Dimension_M</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="198" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="198" bodyend="-1"/>
+        <referencedby refid="class_hartree_fock_1a0138ea06db729472531ba768af7d0f4f" compoundref="main_8cpp" startline="1406" endline="1418">HartreeFock::HartreeFock</referencedby>
+        <referencedby refid="class_hartree_fock_1a727be4c17f68c9ce3cbfcaae6f97e752" compoundref="main_8cpp" startline="1647" endline="1668">HartreeFock::Initialization</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_interaction_1ae169b32f8b692bdf54bdae97c2f395be" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Interaction&lt; T &gt;::Dimension_J[IsoSpin_Z]</definition>
+        <argsstring>[IsoSpin_Z]</argsstring>
+        <name>Dimension_J</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="199" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="199" bodyend="-1"/>
+        <referencedby refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" compoundref="main_8cpp" startline="229" endline="258">Interaction&lt; T &gt;::Interaction</referencedby>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">HartreeFock::AMP</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_interaction_1a42d5c1378bd17f7755424f7ab5702ef6" prot="public" static="no" mutable="no">
+        <type><ref refid="class_j___orbit" kindref="compound">J_Orbit</ref> *</type>
+        <definition>J_Orbit* Interaction&lt; T &gt;::J_scheme[IsoSpin_Z]</definition>
+        <argsstring>[IsoSpin_Z]</argsstring>
+        <name>J_scheme</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="200" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="200" bodyend="-1"/>
+        <referencedby refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" compoundref="main_8cpp" startline="229" endline="258">Interaction&lt; T &gt;::Interaction</referencedby>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">HartreeFock::AMP</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_interaction_1ad29cbf9eca392e71958932cef5f7bf66" prot="public" static="no" mutable="no">
+        <type><ref refid="class_m___state" kindref="compound">M_State</ref> *</type>
+        <definition>M_State* Interaction&lt; T &gt;::M_scheme[IsoSpin_Z]</definition>
+        <argsstring>[IsoSpin_Z]</argsstring>
+        <name>M_scheme</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="201" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="201" bodyend="-1"/>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">HartreeFock::AMP</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_interaction_1acfc6941cb6a85c4368855da6503a892f" prot="public" static="no" mutable="no">
+        <type>ivec</type>
+        <definition>ivec Interaction&lt; T &gt;::index[IsoSpin_Z+1]</definition>
+        <argsstring>[IsoSpin_Z+1]</argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="202" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="202" bodyend="-1"/>
+        <referencedby refid="class_interaction_1aa840d7de0932cb51370619a8033b7800" compoundref="main_8cpp" startline="274" endline="403">Interaction&lt; T &gt;::Basis_Transform</referencedby>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">HartreeFock::Diagonalization</referencedby>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">HartreeFock::AMP</referencedby>
+        <referencedby refid="class_hartree_fock_1a19fc02314568b45713933525cf62f11c" compoundref="main_8cpp" startline="1981" endline="2144">HartreeFock::Construct_ME</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_interaction_1ac7b745819fe9b13f3df3bd7750eceb97" prot="public" static="no" mutable="no">
+        <type>Col&lt; T &gt;</type>
+        <definition>Col&lt;T&gt; Interaction&lt; T &gt;::TBME[IsoSpin_Z+1]</definition>
+        <argsstring>[IsoSpin_Z+1]</argsstring>
+        <name>TBME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="203" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="203" bodyend="-1"/>
+        <referencedby refid="class_interaction_1aa840d7de0932cb51370619a8033b7800" compoundref="main_8cpp" startline="274" endline="403">Interaction&lt; T &gt;::Basis_Transform</referencedby>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">HartreeFock::Diagonalization</referencedby>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">HartreeFock::AMP</referencedby>
+        <referencedby refid="class_hartree_fock_1a19fc02314568b45713933525cf62f11c" compoundref="main_8cpp" startline="1981" endline="2144">HartreeFock::Construct_ME</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_interaction_1ad629df71841bfb02116616b2f4764811" prot="public" static="no" mutable="no">
+        <type>Mat&lt; T &gt;</type>
+        <definition>Mat&lt;T&gt; Interaction&lt; T &gt;::OBME[IsoSpin_Z]</definition>
+        <argsstring>[IsoSpin_Z]</argsstring>
+        <name>OBME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="204" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="204" bodyend="-1"/>
+        <referencedby refid="class_interaction_1aa840d7de0932cb51370619a8033b7800" compoundref="main_8cpp" startline="274" endline="403">Interaction&lt; T &gt;::Basis_Transform</referencedby>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">HartreeFock::Diagonalization</referencedby>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">HartreeFock::AMP</referencedby>
+        <referencedby refid="class_hartree_fock_1a19fc02314568b45713933525cf62f11c" compoundref="main_8cpp" startline="1981" endline="2144">HartreeFock::Construct_ME</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_interaction_1aafd4ee901de0d1463b71f89294b4b3f5" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_coupled___state" kindref="compound">Coupled_State</ref> *</type>
+        <definition>Coupled_State* Interaction&lt; T &gt;::Orbit</definition>
+        <argsstring></argsstring>
+        <name>Orbit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="207" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="207" bodyend="-1"/>
+        <referencedby refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" compoundref="main_8cpp" startline="229" endline="258">Interaction&lt; T &gt;::Interaction</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_interaction_1a5a8eceab2bed942ec46d581b4cd4a661" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Interaction&lt; T &gt;::Mass_Num</definition>
+        <argsstring></argsstring>
+        <name>Mass_Num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="209" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_interaction_1afd1f26a552c012f6444e02a0f2718388" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Interaction&lt; T &gt;::hbar_omiga</definition>
+        <argsstring></argsstring>
+        <name>hbar_omiga</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="210" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_interaction_1a1590aded9946d5afaa3ae5a2f77b1933" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Interaction&lt; T &gt;::Interaction</definition>
+        <argsstring>()</argsstring>
+        <name>Interaction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="178" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="214" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Interaction&lt; T &gt;::Interaction</definition>
+        <argsstring>(string space, string ME, int A)</argsstring>
+        <name>Interaction</name>
+        <param>
+          <type>string</type>
+          <declname>space</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>ME</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="179" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="229" bodyend="258"/>
+        <references refid="class_interaction_1a5215914c0464c733a6c140a814b48513" compoundref="main_8cpp" startline="406" endline="453">Interaction&lt; T &gt;::Read_Orbit_Iso</references>
+        <references refid="class_interaction_1ae169b32f8b692bdf54bdae97c2f395be" compoundref="main_8cpp" startline="199">Interaction&lt; T &gt;::Dimension_J</references>
+        <references refid="class_interaction_1aafd4ee901de0d1463b71f89294b4b3f5" compoundref="main_8cpp" startline="207">Interaction&lt; T &gt;::Orbit</references>
+        <references refid="class_interaction_1ae16c26ed612f825cfa114b0ca9a4fbc2" compoundref="main_8cpp" startline="546" endline="585">Interaction&lt; T &gt;::Setup_Uncoupled_States_Iso</references>
+        <references refid="class_interaction_1a42d5c1378bd17f7755424f7ab5702ef6" compoundref="main_8cpp" startline="200">Interaction&lt; T &gt;::J_scheme</references>
+        <references refid="class_interaction_1a467419c63d4d647ad219f7b46b6afed5" compoundref="main_8cpp" startline="1094" endline="1166">Interaction&lt; T &gt;::Read_Interaction_Iso</references>
+        <references refid="class_interaction_1ae6f2362eebdf933d63c8133328fbf0f7" compoundref="main_8cpp" startline="671" endline="888">Interaction&lt; T &gt;::Construct_Interaction_Iso</references>
+        <references refid="class_interaction_1a6df2e9326e87a957cf6efd63e3188cf7" compoundref="main_8cpp" startline="456" endline="543">Interaction&lt; T &gt;::Read_Orbit_PN</references>
+        <references refid="class_interaction_1a067c62aec0e8fba647d5e5cefb13fadc" compoundref="main_8cpp" startline="196">Interaction&lt; T &gt;::IsoSpin_Z</references>
+        <references refid="class_interaction_1a34f5f4258d6b5acb0cb228ff82855ed6" compoundref="main_8cpp" startline="588" endline="668">Interaction&lt; T &gt;::Setup_Uncoupled_States_PN</references>
+        <references refid="class_interaction_1a96b36b6eab380437ba94585a5ac2a31b" compoundref="main_8cpp" startline="1169" endline="1329">Interaction&lt; T &gt;::Read_Interaction_PN</references>
+        <references refid="class_interaction_1a42aceecb46825fe9c78b71a00f888206" compoundref="main_8cpp" startline="891" endline="1091">Interaction&lt; T &gt;::Construct_Interaction_PN</references>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a3d1a04c8afff080d7e9409d59a96efba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Interaction&lt; T &gt;::~Interaction</definition>
+        <argsstring>()</argsstring>
+        <name>~Interaction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="180" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="261" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a906559736b06d72e49244436e8dfad0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Interaction&lt; T &gt;::unpack</definition>
+        <argsstring>(int num, int &amp;i, int &amp;j, int &amp;k, int &amp;l)</argsstring>
+        <name>unpack</name>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="181" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1332" bodyend="1345"/>
+        <referencedby refid="class_interaction_1aa840d7de0932cb51370619a8033b7800" compoundref="main_8cpp" startline="274" endline="403">Interaction&lt; T &gt;::Basis_Transform</referencedby>
+        <referencedby refid="class_hartree_fock_1a489618a047bfb88057bd50d73d79c2e3" compoundref="main_8cpp" startline="1509" endline="1558">HartreeFock::Mean_Field</referencedby>
+        <referencedby refid="class_hartree_fock_1accb7866bf87089908210f64157668914" compoundref="main_8cpp" startline="1560" endline="1600">HartreeFock::Hamiltonian</referencedby>
+        <referencedby refid="class_hartree_fock_1a19fc02314568b45713933525cf62f11c" compoundref="main_8cpp" startline="1981" endline="2144">HartreeFock::Construct_ME</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a68bde2a8a674f54a8f42cd992e96b907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Interaction&lt; T &gt;::pack</definition>
+        <argsstring>(int i, int j, int k, int l, int &amp;num)</argsstring>
+        <name>pack</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="182" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1348" bodyend="1354"/>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a5215914c0464c733a6c140a814b48513" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Interaction&lt; T &gt;::Read_Orbit_Iso</definition>
+        <argsstring>(string space)</argsstring>
+        <name>Read_Orbit_Iso</name>
+        <param>
+          <type>string</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+<para>Read J orbit in isospin representation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="class_j___orbit" kindref="compound">J_Orbit</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="184" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="406" bodyend="453"/>
+        <references refid="class_j___orbit_1abbbbfd967a5f2d1de6e8a1dbd458ee65" compoundref="main_8cpp" startline="125">J_Orbit::n</references>
+        <referencedby refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" compoundref="main_8cpp" startline="229" endline="258">Interaction&lt; T &gt;::Interaction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a6df2e9326e87a957cf6efd63e3188cf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Interaction&lt; T &gt;::Read_Orbit_PN</definition>
+        <argsstring>(string space)</argsstring>
+        <name>Read_Orbit_PN</name>
+        <param>
+          <type>string</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+<para>Read J orbit in proton-neutron representation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="class_j___orbit" kindref="compound">J_Orbit</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="185" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="456" bodyend="543"/>
+        <references refid="class_j___orbit_1abbbbfd967a5f2d1de6e8a1dbd458ee65" compoundref="main_8cpp" startline="125">J_Orbit::n</references>
+        <referencedby refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" compoundref="main_8cpp" startline="229" endline="258">Interaction&lt; T &gt;::Interaction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a467419c63d4d647ad219f7b46b6afed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Interaction&lt; T &gt;::Read_Interaction_Iso</definition>
+        <argsstring>(string ME)</argsstring>
+        <name>Read_Interaction_Iso</name>
+        <param>
+          <type>string</type>
+          <declname>ME</declname>
+        </param>
+        <briefdescription>
+<para>Read OBME and TBME in isospin representation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MartrixElements</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>OBME </para><simplesectsep/><para>TBME J scheme </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="186" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1094" bodyend="1166"/>
+        <referencedby refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" compoundref="main_8cpp" startline="229" endline="258">Interaction&lt; T &gt;::Interaction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a96b36b6eab380437ba94585a5ac2a31b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Interaction&lt; T &gt;::Read_Interaction_PN</definition>
+        <argsstring>(string ME)</argsstring>
+        <name>Read_Interaction_PN</name>
+        <param>
+          <type>string</type>
+          <declname>ME</declname>
+        </param>
+        <briefdescription>
+<para>Read OBME and TBME in proton-neutron representation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MartrixElements</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>OBME </para><simplesectsep/><para>TBME J scheme </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="187" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1169" bodyend="1329"/>
+        <referencedby refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" compoundref="main_8cpp" startline="229" endline="258">Interaction&lt; T &gt;::Interaction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1ae6f2362eebdf933d63c8133328fbf0f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Interaction&lt; T &gt;::Construct_Interaction_Iso</definition>
+        <argsstring>()</argsstring>
+        <name>Construct_Interaction_Iso</name>
+        <briefdescription>
+<para>Construct interaction in isospin representation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TBME</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>J scheme </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TBME M scheme </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>pp, nn interaction</para><para>pn interaction </para>        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="188" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="671" bodyend="888"/>
+        <referencedby refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" compoundref="main_8cpp" startline="229" endline="258">Interaction&lt; T &gt;::Interaction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a42aceecb46825fe9c78b71a00f888206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Interaction&lt; T &gt;::Construct_Interaction_PN</definition>
+        <argsstring>()</argsstring>
+        <name>Construct_Interaction_PN</name>
+        <briefdescription>
+<para>Construct interaction in proton-neutron representation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>TBME</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>J scheme </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TBME M scheme </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>pp, nn interaction</para><para>pn interaction</para><para>if(oa==ob) fact*=sqrt(2.0); if(oc==od) fact*=sqrt(2.0);</para><para>!!!5 </para>        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="189" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="891" bodyend="1091"/>
+        <referencedby refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" compoundref="main_8cpp" startline="229" endline="258">Interaction&lt; T &gt;::Interaction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1ae16c26ed612f825cfa114b0ca9a4fbc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Interaction&lt; T &gt;::Setup_Uncoupled_States_Iso</definition>
+        <argsstring>(J_Orbit *J, int dim, Coupled_State *vtbme)</argsstring>
+        <name>Setup_Uncoupled_States_Iso</name>
+        <param>
+          <type><ref refid="class_j___orbit" kindref="compound">J_Orbit</ref> *</type>
+          <declname>J</declname>
+          <defname>Jstates</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_coupled___state" kindref="compound">Coupled_State</ref> *</type>
+          <declname>vtbme</declname>
+        </param>
+        <briefdescription>
+<para>Setup TBME and uncoupled states in isospin representation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_j___orbit" kindref="compound">J_Orbit</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TBME space </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="190" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="546" bodyend="585"/>
+        <references refid="class_j___orbit_1a4df41865c99b0ffd1560a388eb67ee44" compoundref="main_8cpp" startline="127">J_Orbit::j</references>
+        <references refid="struct_coupled___state_1a7f995cca6b0a5bb41e30d9723e358887" compoundref="main_8cpp" startline="166">Coupled_State::orbit</references>
+        <references refid="struct_coupled___state_1a923e8978be136d1c09742c608914a00b" compoundref="main_8cpp" startline="167">Coupled_State::jmax</references>
+        <references refid="struct_coupled___state_1a473ea496bd301f167432a8e61d6487bc" compoundref="main_8cpp" startline="168">Coupled_State::jmin</references>
+        <references refid="struct_coupled___state_1a0cf310a6235dd6ff6d140b94717ca735" compoundref="main_8cpp" startline="169">Coupled_State::v</references>
+        <referencedby refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" compoundref="main_8cpp" startline="229" endline="258">Interaction&lt; T &gt;::Interaction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1a34f5f4258d6b5acb0cb228ff82855ed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Interaction&lt; T &gt;::Setup_Uncoupled_States_PN</definition>
+        <argsstring>(J_Orbit **Jstates, int *dim, Coupled_State *vtbme)</argsstring>
+        <name>Setup_Uncoupled_States_PN</name>
+        <param>
+          <type><ref refid="class_j___orbit" kindref="compound">J_Orbit</ref> **</type>
+          <declname>Jstates</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_coupled___state" kindref="compound">Coupled_State</ref> *</type>
+          <declname>vtbme</declname>
+        </param>
+        <briefdescription>
+<para>Setup TBME and uncoupled states in proton-neutron representation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="class_j___orbit" kindref="compound">J_Orbit</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TBME space </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="191" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="588" bodyend="668"/>
+        <references refid="class_j___orbit_1a4df41865c99b0ffd1560a388eb67ee44" compoundref="main_8cpp" startline="127">J_Orbit::j</references>
+        <references refid="struct_coupled___state_1a7f995cca6b0a5bb41e30d9723e358887" compoundref="main_8cpp" startline="166">Coupled_State::orbit</references>
+        <references refid="struct_coupled___state_1a923e8978be136d1c09742c608914a00b" compoundref="main_8cpp" startline="167">Coupled_State::jmax</references>
+        <references refid="struct_coupled___state_1a473ea496bd301f167432a8e61d6487bc" compoundref="main_8cpp" startline="168">Coupled_State::jmin</references>
+        <references refid="struct_coupled___state_1a0cf310a6235dd6ff6d140b94717ca735" compoundref="main_8cpp" startline="169">Coupled_State::v</references>
+        <referencedby refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" compoundref="main_8cpp" startline="229" endline="258">Interaction&lt; T &gt;::Interaction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_interaction_1aa840d7de0932cb51370619a8033b7800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+          <param>
+            <type>typename T3</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Interaction&lt; T &gt;::Basis_Transform</definition>
+        <argsstring>(Interaction&lt; T3 &gt; &amp;force, T1 *psil, T2 *psir)</argsstring>
+        <name>Basis_Transform</name>
+        <param>
+          <type><ref refid="class_interaction" kindref="compound">Interaction</ref>&lt; T3 &gt; &amp;</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>T1 *</type>
+          <declname>psil</declname>
+        </param>
+        <param>
+          <type>T2 *</type>
+          <declname>psir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>One body matrix elements</para><para>Two body matrix elements </para>        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="194" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="274" bodyend="403"/>
+        <references refid="class_interaction_1ad629df71841bfb02116616b2f4764811" compoundref="main_8cpp" startline="204">Interaction&lt; T &gt;::OBME</references>
+        <references refid="class_interaction_1acfc6941cb6a85c4368855da6503a892f" compoundref="main_8cpp" startline="202">Interaction&lt; T &gt;::index</references>
+        <references refid="class_interaction_1a906559736b06d72e49244436e8dfad0d" compoundref="main_8cpp" startline="1332" endline="1345">Interaction&lt; T &gt;::unpack</references>
+        <references refid="class_interaction_1ac7b745819fe9b13f3df3bd7750eceb97" compoundref="main_8cpp" startline="203">Interaction&lt; T &gt;::TBME</references>
+        <referencedby refid="class_nucleus_1a2f41a5f6ec0546ec57736d5f0bad6e17" compoundref="main_8cpp" startline="2426" endline="2541">Nucleus::Spectral</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="38">
+        <label>Interaction&lt; T &gt;</label>
+        <link refid="class_interaction"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>J_scheme</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>Orbit</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>M_scheme</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>J_Orbit</label>
+        <link refid="class_j___orbit"/>
+      </node>
+      <node id="40">
+        <label>Coupled_State</label>
+        <link refid="struct_coupled___state"/>
+      </node>
+      <node id="41">
+        <label>M_State</label>
+        <link refid="class_m___state"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="176" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="175" bodyend="211"/>
+    <listofallmembers>
+      <member refid="class_interaction_1aa840d7de0932cb51370619a8033b7800" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Basis_Transform</name></member>
+      <member refid="class_interaction_1ae6f2362eebdf933d63c8133328fbf0f7" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Construct_Interaction_Iso</name></member>
+      <member refid="class_interaction_1a42aceecb46825fe9c78b71a00f888206" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Construct_Interaction_PN</name></member>
+      <member refid="class_interaction_1ae169b32f8b692bdf54bdae97c2f395be" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Dimension_J</name></member>
+      <member refid="class_interaction_1afef136dd95339bef3a8c5e8488f6455f" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Dimension_M</name></member>
+      <member refid="class_interaction_1afd1f26a552c012f6444e02a0f2718388" prot="private" virt="non-virtual"><scope>Interaction</scope><name>hbar_omiga</name></member>
+      <member refid="class_interaction_1acfc6941cb6a85c4368855da6503a892f" prot="public" virt="non-virtual"><scope>Interaction</scope><name>index</name></member>
+      <member refid="class_interaction_1a1590aded9946d5afaa3ae5a2f77b1933" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Interaction</name></member>
+      <member refid="class_interaction_1a3579f62f4d43a48f62dab8b5ca560941" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Interaction</name></member>
+      <member refid="class_interaction_1a067c62aec0e8fba647d5e5cefb13fadc" prot="public" virt="non-virtual"><scope>Interaction</scope><name>IsoSpin_Z</name></member>
+      <member refid="class_interaction_1a42d5c1378bd17f7755424f7ab5702ef6" prot="public" virt="non-virtual"><scope>Interaction</scope><name>J_scheme</name></member>
+      <member refid="class_interaction_1ad29cbf9eca392e71958932cef5f7bf66" prot="public" virt="non-virtual"><scope>Interaction</scope><name>M_scheme</name></member>
+      <member refid="class_interaction_1a5a8eceab2bed942ec46d581b4cd4a661" prot="private" virt="non-virtual"><scope>Interaction</scope><name>Mass_Num</name></member>
+      <member refid="class_interaction_1ad629df71841bfb02116616b2f4764811" prot="public" virt="non-virtual"><scope>Interaction</scope><name>OBME</name></member>
+      <member refid="class_interaction_1aafd4ee901de0d1463b71f89294b4b3f5" prot="private" virt="non-virtual"><scope>Interaction</scope><name>Orbit</name></member>
+      <member refid="class_interaction_1a68bde2a8a674f54a8f42cd992e96b907" prot="public" virt="non-virtual"><scope>Interaction</scope><name>pack</name></member>
+      <member refid="class_interaction_1a467419c63d4d647ad219f7b46b6afed5" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Read_Interaction_Iso</name></member>
+      <member refid="class_interaction_1a96b36b6eab380437ba94585a5ac2a31b" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Read_Interaction_PN</name></member>
+      <member refid="class_interaction_1a5215914c0464c733a6c140a814b48513" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Read_Orbit_Iso</name></member>
+      <member refid="class_interaction_1a6df2e9326e87a957cf6efd63e3188cf7" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Read_Orbit_PN</name></member>
+      <member refid="class_interaction_1ae16c26ed612f825cfa114b0ca9a4fbc2" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Setup_Uncoupled_States_Iso</name></member>
+      <member refid="class_interaction_1a34f5f4258d6b5acb0cb228ff82855ed6" prot="public" virt="non-virtual"><scope>Interaction</scope><name>Setup_Uncoupled_States_PN</name></member>
+      <member refid="class_interaction_1ac7b745819fe9b13f3df3bd7750eceb97" prot="public" virt="non-virtual"><scope>Interaction</scope><name>TBME</name></member>
+      <member refid="class_interaction_1a906559736b06d72e49244436e8dfad0d" prot="public" virt="non-virtual"><scope>Interaction</scope><name>unpack</name></member>
+      <member refid="class_interaction_1a3d1a04c8afff080d7e9409d59a96efba" prot="public" virt="non-virtual"><scope>Interaction</scope><name>~Interaction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

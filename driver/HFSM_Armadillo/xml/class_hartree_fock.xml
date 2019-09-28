@@ -1,0 +1,944 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_hartree_fock" kind="class" prot="public">
+    <compoundname>HartreeFock</compoundname>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_hartree_fock_1a645d83d6370a8adf666416d08c846ddd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Nucleus</definition>
+        <argsstring></argsstring>
+        <name>Nucleus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1390" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1390" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hartree_fock_1a4a6514cfef19a943db8cb06b245b2f93" prot="private" static="no" mutable="no">
+        <type><ref refid="class_interaction" kindref="compound">Interaction</ref>&lt; double &gt;</type>
+        <definition>Interaction&lt;double&gt; HartreeFock::ME</definition>
+        <argsstring></argsstring>
+        <name>ME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1392" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1392" bodyend="-1"/>
+        <referencedby refid="class_hartree_fock_1a0138ea06db729472531ba768af7d0f4f" compoundref="main_8cpp" startline="1406" endline="1418">HartreeFock</referencedby>
+        <referencedby refid="class_hartree_fock_1a489618a047bfb88057bd50d73d79c2e3" compoundref="main_8cpp" startline="1509" endline="1558">Mean_Field</referencedby>
+        <referencedby refid="class_hartree_fock_1accb7866bf87089908210f64157668914" compoundref="main_8cpp" startline="1560" endline="1600">Hamiltonian</referencedby>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+        <referencedby refid="class_hartree_fock_1a727be4c17f68c9ce3cbfcaae6f97e752" compoundref="main_8cpp" startline="1647" endline="1668">Initialization</referencedby>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">AMP</referencedby>
+        <referencedby refid="class_nucleus_1a2f41a5f6ec0546ec57736d5f0bad6e17" compoundref="main_8cpp" startline="2426" endline="2541">Nucleus::Spectral</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hartree_fock_1abfd928be86a6d127aff8d8c928d30695" prot="private" static="no" mutable="no">
+        <type><ref refid="class_interaction" kindref="compound">Interaction</ref>&lt; cx_double &gt;</type>
+        <definition>Interaction&lt;cx_double&gt; HartreeFock::ME_HF</definition>
+        <argsstring></argsstring>
+        <name>ME_HF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1393" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1393" bodyend="-1"/>
+        <referencedby refid="class_hartree_fock_1a19fc02314568b45713933525cf62f11c" compoundref="main_8cpp" startline="1981" endline="2144">Construct_ME</referencedby>
+        <referencedby refid="class_nucleus_1a2f41a5f6ec0546ec57736d5f0bad6e17" compoundref="main_8cpp" startline="2426" endline="2541">Nucleus::Spectral</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hartree_fock_1a18404222b2f400fb9c9985e0b7c7e664" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int HartreeFock::MassNumber[Interaction&lt; double &gt;::IsoSpin_Z+1]</definition>
+        <argsstring>[Interaction&lt; double &gt;::IsoSpin_Z+1]</argsstring>
+        <name>MassNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1394" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1394" bodyend="-1"/>
+        <referencedby refid="class_hartree_fock_1a0138ea06db729472531ba768af7d0f4f" compoundref="main_8cpp" startline="1406" endline="1418">HartreeFock</referencedby>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+        <referencedby refid="class_hartree_fock_1a727be4c17f68c9ce3cbfcaae6f97e752" compoundref="main_8cpp" startline="1647" endline="1668">Initialization</referencedby>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">AMP</referencedby>
+        <referencedby refid="class_nucleus_1a5f953c3273fccb833c90c929e6c991a2" compoundref="main_8cpp" startline="2167" endline="2269">Nucleus::Construct_Configuration</referencedby>
+        <referencedby refid="class_nucleus_1a5e449f1e876db72824f9466131becac0" compoundref="main_8cpp" startline="2271" endline="2424">Nucleus::Spectral</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hartree_fock_1a1f460784edc46e9b41d4ea047ef3a3a1" prot="private" static="no" mutable="no">
+        <type>cx_mat</type>
+        <definition>cx_mat HartreeFock::rho[Interaction&lt; double &gt;::IsoSpin_Z]</definition>
+        <argsstring>[Interaction&lt; double &gt;::IsoSpin_Z]</argsstring>
+        <name>rho</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1396" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1396" bodyend="-1"/>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hartree_fock_1a7e7361a6e064c9983b0e263f250dd615" prot="private" static="no" mutable="no">
+        <type>cx_mat</type>
+        <definition>cx_mat HartreeFock::bra[Interaction&lt; double &gt;::IsoSpin_Z]</definition>
+        <argsstring>[Interaction&lt; double &gt;::IsoSpin_Z]</argsstring>
+        <name>bra</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1397" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1397" bodyend="-1"/>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+        <referencedby refid="class_hartree_fock_1a727be4c17f68c9ce3cbfcaae6f97e752" compoundref="main_8cpp" startline="1647" endline="1668">Initialization</referencedby>
+        <referencedby refid="class_hartree_fock_1a36141675bcd557c4241e82b9bf964577" compoundref="main_8cpp" startline="1952" endline="1979">DBP</referencedby>
+        <referencedby refid="class_nucleus_1a5e449f1e876db72824f9466131becac0" compoundref="main_8cpp" startline="2271" endline="2424">Nucleus::Spectral</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hartree_fock_1a78ba84d83058ad9c7db287beebb154d4" prot="private" static="no" mutable="no">
+        <type>cx_mat</type>
+        <definition>cx_mat HartreeFock::ket[Interaction&lt; double &gt;::IsoSpin_Z]</definition>
+        <argsstring>[Interaction&lt; double &gt;::IsoSpin_Z]</argsstring>
+        <name>ket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1398" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1398" bodyend="-1"/>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+        <referencedby refid="class_hartree_fock_1a727be4c17f68c9ce3cbfcaae6f97e752" compoundref="main_8cpp" startline="1647" endline="1668">Initialization</referencedby>
+        <referencedby refid="class_hartree_fock_1a36141675bcd557c4241e82b9bf964577" compoundref="main_8cpp" startline="1952" endline="1979">DBP</referencedby>
+        <referencedby refid="class_nucleus_1a5e449f1e876db72824f9466131becac0" compoundref="main_8cpp" startline="2271" endline="2424">Nucleus::Spectral</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hartree_fock_1a0362bdcdbf5969097be8c03576639e53" prot="private" static="no" mutable="no">
+        <type>cx_mat</type>
+        <definition>cx_mat HartreeFock::V_mf[Interaction&lt; double &gt;::IsoSpin_Z]</definition>
+        <argsstring>[Interaction&lt; double &gt;::IsoSpin_Z]</argsstring>
+        <name>V_mf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1399" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1399" bodyend="-1"/>
+        <referencedby refid="class_hartree_fock_1a0138ea06db729472531ba768af7d0f4f" compoundref="main_8cpp" startline="1406" endline="1418">HartreeFock</referencedby>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hartree_fock_1a4cd7c0aece3eec0c593638763f846d36" prot="private" static="no" mutable="no">
+        <type>cx_mat</type>
+        <definition>cx_mat HartreeFock::H_sp[Interaction&lt; double &gt;::IsoSpin_Z]</definition>
+        <argsstring>[Interaction&lt; double &gt;::IsoSpin_Z]</argsstring>
+        <name>H_sp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1401" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1401" bodyend="-1"/>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hartree_fock_1a1bb866f2ea89dc0d44f70e1d8e6b1425" prot="private" static="no" mutable="no">
+        <type>vec</type>
+        <definition>vec HartreeFock::E_sp[Interaction&lt; double &gt;::IsoSpin_Z]</definition>
+        <argsstring>[Interaction&lt; double &gt;::IsoSpin_Z]</argsstring>
+        <name>E_sp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1402" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1402" bodyend="-1"/>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+        <referencedby refid="class_hartree_fock_1a0ae03c7ead906063143f0047d32f1ee1" compoundref="main_8cpp" startline="1670" endline="1697">Iteration</referencedby>
+        <referencedby refid="class_nucleus_1a5f953c3273fccb833c90c929e6c991a2" compoundref="main_8cpp" startline="2167" endline="2269">Nucleus::Construct_Configuration</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hartree_fock_1ae654600f841836c3cb98abee72bf6c35" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double HartreeFock::BE</definition>
+        <argsstring></argsstring>
+        <name>BE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1403" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1403" bodyend="-1"/>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+        <referencedby refid="class_hartree_fock_1a0ae03c7ead906063143f0047d32f1ee1" compoundref="main_8cpp" startline="1670" endline="1697">Iteration</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hartree_fock_1a0138ea06db729472531ba768af7d0f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HartreeFock::HartreeFock</definition>
+        <argsstring>(int Z, int A, string space, string force)</argsstring>
+        <name>HartreeFock</name>
+        <param>
+          <type>int</type>
+          <declname>Z</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>space</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1362" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1406" bodyend="1418"/>
+        <references refid="class_hartree_fock_1a18404222b2f400fb9c9985e0b7c7e664" compoundref="main_8cpp" startline="1394">MassNumber</references>
+        <references refid="class_hartree_fock_1a4a6514cfef19a943db8cb06b245b2f93" compoundref="main_8cpp" startline="1392">ME</references>
+        <references refid="class_interaction_1afef136dd95339bef3a8c5e8488f6455f" compoundref="main_8cpp" startline="198">Interaction&lt; T &gt;::Dimension_M</references>
+        <references refid="class_hartree_fock_1a0362bdcdbf5969097be8c03576639e53" compoundref="main_8cpp" startline="1399">V_mf</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a82ad40272840da4287b9a602415beac4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>HartreeFock::~HartreeFock</definition>
+        <argsstring>()</argsstring>
+        <name>~HartreeFock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1363" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1363" bodyend="1363"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a455afd726ee175800c437ac957fab978" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void HartreeFock::Density_Matrix</definition>
+        <argsstring>(T1 &amp;psil, T2 &amp;psir, cx_mat &amp;rhoij, cx_double &amp;overlap)</argsstring>
+        <name>Density_Matrix</name>
+        <param>
+          <type>T1 &amp;</type>
+          <declname>psil</declname>
+        </param>
+        <param>
+          <type>T2 &amp;</type>
+          <declname>psir</declname>
+        </param>
+        <param>
+          <type>cx_mat &amp;</type>
+          <declname>rhoij</declname>
+        </param>
+        <param>
+          <type>cx_double &amp;</type>
+          <declname>overlap</declname>
+        </param>
+        <briefdescription>
+<para>Subroutine to compute rho(i,j) for two SD&apos;s that are not orthogonal using a matrix representation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>psir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>right SD </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>psil</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>left SD </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>rhoij: density matrix &lt; psil | a^ a_j | psir &gt; </para><simplesectsep/><para>overlap: &lt; psil | psir &gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>!!!!!! SVD may be more suitable </para>        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1366" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1421" bodyend="1469"/>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">AMP</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a489618a047bfb88057bd50d73d79c2e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HartreeFock::Mean_Field</definition>
+        <argsstring>(ivec *index, vec *tbme, cx_mat *rhoij, cx_mat *gamma)</argsstring>
+        <name>Mean_Field</name>
+        <param>
+          <type>ivec *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>vec *</type>
+          <declname>tbme</declname>
+        </param>
+        <param>
+          <type>cx_mat *</type>
+          <declname>rhoij</declname>
+        </param>
+        <param>
+          <type>cx_mat *</type>
+          <declname>gamma</declname>
+        </param>
+        <briefdescription>
+<para>Calculates mean-field matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Index(i)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of (packed) nonzero indices, i = 1 to nmatpp to get indices IJKL of i&apos;th matrix element do UNPACK(Index) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TBME(i)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ith TBME associated with indices unpacked from Index(i) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhopij/rhonij</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>density matices for protons/neutrons </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>gammap/gamman: Gamma matrix for protons/neutrons </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1367" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1509" bodyend="1558"/>
+        <references refid="class_hartree_fock_1a4a6514cfef19a943db8cb06b245b2f93" compoundref="main_8cpp" startline="1392">ME</references>
+        <references refid="class_interaction_1a906559736b06d72e49244436e8dfad0d" compoundref="main_8cpp" startline="1332" endline="1345">Interaction&lt; T &gt;::unpack</references>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1af85bdddebed73f27c2b883c2d9e8972e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HartreeFock::Hamiltonian_sp</definition>
+        <argsstring>(mat &amp;e_sp, cx_mat &amp;gamma, cx_mat &amp;ham)</argsstring>
+        <name>Hamiltonian_sp</name>
+        <param>
+          <type>mat &amp;</type>
+          <declname>e_sp</declname>
+        </param>
+        <param>
+          <type>cx_mat &amp;</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>cx_mat &amp;</type>
+          <declname>ham</declname>
+        </param>
+        <briefdescription>
+<para>Calculates matrix h=T+Gamma. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e_sp(i</parametername>
+<parametername>j)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one-body matrix element between i,j m-states </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gamma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gamma matrix </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Hamiltonian_sp </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1368" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1602" bodyend="1612"/>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1accb7866bf87089908210f64157668914" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cx_double</type>
+        <definition>cx_double HartreeFock::Hamiltonian</definition>
+        <argsstring>(mat *e_sp, ivec *index, vec *tbme, cx_mat *rhoij, cx_double *overlap)</argsstring>
+        <name>Hamiltonian</name>
+        <param>
+          <type>mat *</type>
+          <declname>e_sp</declname>
+        </param>
+        <param>
+          <type>ivec *</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>vec *</type>
+          <declname>tbme</declname>
+        </param>
+        <param>
+          <type>cx_mat *</type>
+          <declname>rhoij</declname>
+        </param>
+        <param>
+          <type>cx_double *</type>
+          <declname>overlap</declname>
+        </param>
+        <briefdescription>
+<para>&lt; psil | H | psir &gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e_sp(i</parametername>
+<parametername>j)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>one-body matrix element between i,j m-states </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Index(i)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of (packed) nonzero indices, i = 1 to nmatpp to get indices IJKL of i&apos;th matrix element do UNPACK(Index) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TBME(i)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ith TBME associated with indices unpacked from Index(i) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>rhoij density matrix &lt; psil | a^ a_j | psir &gt; </para><simplesectsep/><para>&lt; psil | H | psir &gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>OBME</para><para>pp, nn interaction</para><para>pn interaction </para>        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1369" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1560" bodyend="1600"/>
+        <references refid="class_hartree_fock_1a4a6514cfef19a943db8cb06b245b2f93" compoundref="main_8cpp" startline="1392">ME</references>
+        <references refid="class_interaction_1a906559736b06d72e49244436e8dfad0d" compoundref="main_8cpp" startline="1332" endline="1345">Interaction&lt; T &gt;::unpack</references>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">AMP</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HartreeFock::Diagonalization</definition>
+        <argsstring>()</argsstring>
+        <name>Diagonalization</name>
+        <briefdescription>
+<para>Diagonlization single particle Harmiltonian. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Hamiltonian_sp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Energies </para><simplesectsep/><para>Wavefunctions </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1371" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1614" bodyend="1645"/>
+        <references refid="class_hartree_fock_1a7e7361a6e064c9983b0e263f250dd615" compoundref="main_8cpp" startline="1397">bra</references>
+        <references refid="class_hartree_fock_1a18404222b2f400fb9c9985e0b7c7e664" compoundref="main_8cpp" startline="1394">MassNumber</references>
+        <references refid="class_hartree_fock_1a78ba84d83058ad9c7db287beebb154d4" compoundref="main_8cpp" startline="1398">ket</references>
+        <references refid="class_hartree_fock_1a455afd726ee175800c437ac957fab978" compoundref="main_8cpp" startline="1421" endline="1469">Density_Matrix</references>
+        <references refid="class_hartree_fock_1a1f460784edc46e9b41d4ea047ef3a3a1" compoundref="main_8cpp" startline="1396">rho</references>
+        <references refid="class_hartree_fock_1a489618a047bfb88057bd50d73d79c2e3" compoundref="main_8cpp" startline="1509" endline="1558">Mean_Field</references>
+        <references refid="class_hartree_fock_1a4a6514cfef19a943db8cb06b245b2f93" compoundref="main_8cpp" startline="1392">ME</references>
+        <references refid="class_interaction_1acfc6941cb6a85c4368855da6503a892f" compoundref="main_8cpp" startline="202">Interaction&lt; T &gt;::index</references>
+        <references refid="class_interaction_1ac7b745819fe9b13f3df3bd7750eceb97" compoundref="main_8cpp" startline="203">Interaction&lt; T &gt;::TBME</references>
+        <references refid="class_hartree_fock_1a0362bdcdbf5969097be8c03576639e53" compoundref="main_8cpp" startline="1399">V_mf</references>
+        <references refid="class_hartree_fock_1a1d8f2d0c9841c8b999fa31758b059214" compoundref="main_8cpp" startline="1699" endline="1722">Broyden</references>
+        <references refid="class_hartree_fock_1af85bdddebed73f27c2b883c2d9e8972e" compoundref="main_8cpp" startline="1602" endline="1612">Hamiltonian_sp</references>
+        <references refid="class_interaction_1ad629df71841bfb02116616b2f4764811" compoundref="main_8cpp" startline="204">Interaction&lt; T &gt;::OBME</references>
+        <references refid="class_hartree_fock_1a4cd7c0aece3eec0c593638763f846d36" compoundref="main_8cpp" startline="1401">H_sp</references>
+        <references refid="class_hartree_fock_1a1bb866f2ea89dc0d44f70e1d8e6b1425" compoundref="main_8cpp" startline="1402">E_sp</references>
+        <references refid="class_hartree_fock_1ae654600f841836c3cb98abee72bf6c35" compoundref="main_8cpp" startline="1403">BE</references>
+        <references refid="class_hartree_fock_1accb7866bf87089908210f64157668914" compoundref="main_8cpp" startline="1560" endline="1600">Hamiltonian</references>
+        <referencedby refid="class_hartree_fock_1a0ae03c7ead906063143f0047d32f1ee1" compoundref="main_8cpp" startline="1670" endline="1697">Iteration</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a727be4c17f68c9ce3cbfcaae6f97e752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HartreeFock::Initialization</definition>
+        <argsstring>()</argsstring>
+        <name>Initialization</name>
+        <briefdescription>
+<para>Initialize the HF wavefunction. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Bra_WF </para><simplesectsep/><para>Ket_WF </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1372" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1647" bodyend="1668"/>
+        <references refid="class_hartree_fock_1a4a6514cfef19a943db8cb06b245b2f93" compoundref="main_8cpp" startline="1392">ME</references>
+        <references refid="class_interaction_1afef136dd95339bef3a8c5e8488f6455f" compoundref="main_8cpp" startline="198">Interaction&lt; T &gt;::Dimension_M</references>
+        <references refid="class_hartree_fock_1a18404222b2f400fb9c9985e0b7c7e664" compoundref="main_8cpp" startline="1394">MassNumber</references>
+        <references refid="class_hartree_fock_1a7e7361a6e064c9983b0e263f250dd615" compoundref="main_8cpp" startline="1397">bra</references>
+        <references refid="class_hartree_fock_1a78ba84d83058ad9c7db287beebb154d4" compoundref="main_8cpp" startline="1398">ket</references>
+        <referencedby refid="class_hartree_fock_1a0ae03c7ead906063143f0047d32f1ee1" compoundref="main_8cpp" startline="1670" endline="1697">Iteration</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a0ae03c7ead906063143f0047d32f1ee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HartreeFock::Iteration</definition>
+        <argsstring>()</argsstring>
+        <name>Iteration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1373" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1670" bodyend="1697"/>
+        <references refid="class_hartree_fock_1a727be4c17f68c9ce3cbfcaae6f97e752" compoundref="main_8cpp" startline="1647" endline="1668">Initialization</references>
+        <references refid="class_hartree_fock_1ae654600f841836c3cb98abee72bf6c35" compoundref="main_8cpp" startline="1403">BE</references>
+        <references refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</references>
+        <references refid="class_hartree_fock_1a1bb866f2ea89dc0d44f70e1d8e6b1425" compoundref="main_8cpp" startline="1402">E_sp</references>
+        <referencedby refid="class_nucleus_1a5e449f1e876db72824f9466131becac0" compoundref="main_8cpp" startline="2271" endline="2424">Nucleus::Spectral</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a1d8f2d0c9841c8b999fa31758b059214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HartreeFock::Broyden</definition>
+        <argsstring>(cx_mat *m)</argsstring>
+        <name>Broyden</name>
+        <param>
+          <type>cx_mat *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1374" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1699" bodyend="1722"/>
+        <referencedby refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" compoundref="main_8cpp" startline="1614" endline="1645">Diagonalization</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a6e1d4d4e338a2d55746543a230035121" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void HartreeFock::Rotation</definition>
+        <argsstring>(double alpha, double beta, double gamma, T1 &amp;src, T2 &amp;dest, J_Orbit *jscheme, M_State *mscheme, int dim)</argsstring>
+        <name>Rotation</name>
+        <param>
+          <type>double</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>gamma</declname>
+        </param>
+        <param>
+          <type>T1 &amp;</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>T2 &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type><ref refid="class_j___orbit" kindref="compound">J_Orbit</ref> *</type>
+          <declname>jscheme</declname>
+        </param>
+        <param>
+          <type><ref refid="class_m___state" kindref="compound">M_State</ref> *</type>
+          <declname>mscheme</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+<para>Rotate a state. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Wavefunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Rotated Wavefunction </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1377" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1725" bodyend="1755"/>
+        <references refid="class_j___orbit_1a4df41865c99b0ffd1560a388eb67ee44" compoundref="main_8cpp" startline="127">J_Orbit::j</references>
+        <references refid="class_m___state_1a2c76c65cf0d884bc8de693c3db782028" compoundref="main_8cpp" startline="148">M_State::m</references>
+        <references refid="class_wigner___function_1a28e07d8d28a1f74ecf63384106444c19" compoundref="main_8cpp" startline="113" endline="116">Wigner_Function::Wigner_D_Matrix</references>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">AMP</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1af5b3a51f8b65bdda59845648a4865d80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HartreeFock::Space_Inversion</definition>
+        <argsstring>(cx_mat &amp;src, cx_mat &amp;dest, M_State *mscheme)</argsstring>
+        <name>Space_Inversion</name>
+        <param>
+          <type>cx_mat &amp;</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>cx_mat &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type><ref refid="class_m___state" kindref="compound">M_State</ref> *</type>
+          <declname>mscheme</declname>
+        </param>
+        <briefdescription>
+<para>Parity projection. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Wavefunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Wavefunction with space inversed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1378" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1757" bodyend="1772"/>
+        <referencedby refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">AMP</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HartreeFock::AMP</definition>
+        <argsstring>(cx_mat *psil, cx_mat *psir, vec &amp;J, vec &amp;Parity, cx_vec &amp;H, cx_vec &amp;N)</argsstring>
+        <name>AMP</name>
+        <param>
+          <type>cx_mat *</type>
+          <declname>psil</declname>
+        </param>
+        <param>
+          <type>cx_mat *</type>
+          <declname>psir</declname>
+        </param>
+        <param>
+          <type>vec &amp;</type>
+          <declname>J</declname>
+        </param>
+        <param>
+          <type>vec &amp;</type>
+          <declname>Parity</declname>
+        </param>
+        <param>
+          <type>cx_vec &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>cx_vec &amp;</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+<para>Angular momentum projection. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Bra_WF</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Ket_WF</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>J</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>angular momentum </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Hamiltonian </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1379" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1774" bodyend="1917"/>
+        <references refid="class_hartree_fock_1a18404222b2f400fb9c9985e0b7c7e664" compoundref="main_8cpp" startline="1394">MassNumber</references>
+        <references refid="class_hartree_fock_1a6e1d4d4e338a2d55746543a230035121" compoundref="main_8cpp" startline="1725" endline="1755">Rotation</references>
+        <references refid="class_hartree_fock_1a4a6514cfef19a943db8cb06b245b2f93" compoundref="main_8cpp" startline="1392">ME</references>
+        <references refid="class_interaction_1a42d5c1378bd17f7755424f7ab5702ef6" compoundref="main_8cpp" startline="200">Interaction&lt; T &gt;::J_scheme</references>
+        <references refid="class_interaction_1ad29cbf9eca392e71958932cef5f7bf66" compoundref="main_8cpp" startline="201">Interaction&lt; T &gt;::M_scheme</references>
+        <references refid="class_interaction_1ae169b32f8b692bdf54bdae97c2f395be" compoundref="main_8cpp" startline="199">Interaction&lt; T &gt;::Dimension_J</references>
+        <references refid="class_hartree_fock_1a455afd726ee175800c437ac957fab978" compoundref="main_8cpp" startline="1421" endline="1469">Density_Matrix</references>
+        <references refid="class_hartree_fock_1accb7866bf87089908210f64157668914" compoundref="main_8cpp" startline="1560" endline="1600">Hamiltonian</references>
+        <references refid="class_interaction_1ad629df71841bfb02116616b2f4764811" compoundref="main_8cpp" startline="204">Interaction&lt; T &gt;::OBME</references>
+        <references refid="class_interaction_1acfc6941cb6a85c4368855da6503a892f" compoundref="main_8cpp" startline="202">Interaction&lt; T &gt;::index</references>
+        <references refid="class_interaction_1ac7b745819fe9b13f3df3bd7750eceb97" compoundref="main_8cpp" startline="203">Interaction&lt; T &gt;::TBME</references>
+        <references refid="class_hartree_fock_1af5b3a51f8b65bdda59845648a4865d80" compoundref="main_8cpp" startline="1757" endline="1772">Space_Inversion</references>
+        <references refid="class_wigner___function_1a28e07d8d28a1f74ecf63384106444c19" compoundref="main_8cpp" startline="113" endline="116">Wigner_Function::Wigner_D_Matrix</references>
+        <referencedby refid="class_hartree_fock_1a36141675bcd557c4241e82b9bf964577" compoundref="main_8cpp" startline="1952" endline="1979">DBP</referencedby>
+        <referencedby refid="class_nucleus_1a5e449f1e876db72824f9466131becac0" compoundref="main_8cpp" startline="2271" endline="2424">Nucleus::Spectral</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a19fc02314568b45713933525cf62f11c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cx_double</type>
+        <definition>cx_double HartreeFock::Construct_ME</definition>
+        <argsstring>(ivec &amp;psil, ivec &amp;psir)</argsstring>
+        <name>Construct_ME</name>
+        <param>
+          <type>ivec &amp;</type>
+          <declname>psil</declname>
+        </param>
+        <param>
+          <type>ivec &amp;</type>
+          <declname>psir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>pp, nn interaction</para><para>pn interaction</para><para>pp, nn interaction</para><para>!!!0.5*phase*phase2*ME_HF.TBME[pn](n);</para><para>pn interaction</para><para>!!!0.5*phase*ME_HF.TBME[iso](n);</para><para>pn interaction</para><para>!!!0.5*phase*ME_HF.TBME[iso](n);</para><para>pp, nn interaction</para><para>!!!0.5*phase*ME_HF.TBME[pn](n); </para>        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1381" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1981" bodyend="2144"/>
+        <references refid="class_hartree_fock_1a65f76efc9fb81e474af5985c52861e0d" compoundref="main_8cpp" startline="1479" endline="1496">unpack</references>
+        <references refid="class_hartree_fock_1abfd928be86a6d127aff8d8c928d30695" compoundref="main_8cpp" startline="1393">ME_HF</references>
+        <references refid="class_interaction_1ad629df71841bfb02116616b2f4764811" compoundref="main_8cpp" startline="204">Interaction&lt; T &gt;::OBME</references>
+        <references refid="class_interaction_1acfc6941cb6a85c4368855da6503a892f" compoundref="main_8cpp" startline="202">Interaction&lt; T &gt;::index</references>
+        <references refid="class_interaction_1a906559736b06d72e49244436e8dfad0d" compoundref="main_8cpp" startline="1332" endline="1345">Interaction&lt; T &gt;::unpack</references>
+        <references refid="class_interaction_1ac7b745819fe9b13f3df3bd7750eceb97" compoundref="main_8cpp" startline="203">Interaction&lt; T &gt;::TBME</references>
+        <references refid="class_hartree_fock_1af0c009ecdaf0308740355bc6c2482bc2" compoundref="main_8cpp" startline="1498" endline="1507">Count_Particle</references>
+        <referencedby refid="class_nucleus_1a2f41a5f6ec0546ec57736d5f0bad6e17" compoundref="main_8cpp" startline="2426" endline="2541">Nucleus::Spectral</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a14aa8c8c8fff19eb82609abc7fb24958" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HartreeFock::HW_Equation_Hermitian</definition>
+        <argsstring>(cx_mat &amp;A, cx_mat &amp;B, vec &amp;val, cx_mat &amp;wf)</argsstring>
+        <name>HW_Equation_Hermitian</name>
+        <param>
+          <type>cx_mat &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>cx_mat &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>vec &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>cx_mat &amp;</type>
+          <declname>wf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1383" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1920" bodyend="1950"/>
+        <referencedby refid="class_hartree_fock_1a36141675bcd557c4241e82b9bf964577" compoundref="main_8cpp" startline="1952" endline="1979">DBP</referencedby>
+        <referencedby refid="class_nucleus_1a5e449f1e876db72824f9466131becac0" compoundref="main_8cpp" startline="2271" endline="2424">Nucleus::Spectral</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a36141675bcd557c4241e82b9bf964577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HartreeFock::DBP</definition>
+        <argsstring>()</argsstring>
+        <name>DBP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1384" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1952" bodyend="1979"/>
+        <references refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">AMP</references>
+        <references refid="class_hartree_fock_1a7e7361a6e064c9983b0e263f250dd615" compoundref="main_8cpp" startline="1397">bra</references>
+        <references refid="class_hartree_fock_1a78ba84d83058ad9c7db287beebb154d4" compoundref="main_8cpp" startline="1398">ket</references>
+        <references refid="class_hartree_fock_1a14aa8c8c8fff19eb82609abc7fb24958" compoundref="main_8cpp" startline="1920" endline="1950">HW_Equation_Hermitian</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a2cb43d38447325572989595370320706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int HartreeFock::pack</definition>
+        <argsstring>(ivec &amp;config)</argsstring>
+        <name>pack</name>
+        <param>
+          <type>ivec &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1386" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1471" bodyend="1477"/>
+        <referencedby refid="class_nucleus_1a2f41a5f6ec0546ec57736d5f0bad6e17" compoundref="main_8cpp" startline="2426" endline="2541">Nucleus::Spectral</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1a65f76efc9fb81e474af5985c52861e0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ivec</type>
+        <definition>ivec HartreeFock::unpack</definition>
+        <argsstring>(int config)</argsstring>
+        <name>unpack</name>
+        <param>
+          <type>int</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1387" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1479" bodyend="1496"/>
+        <referencedby refid="class_hartree_fock_1a19fc02314568b45713933525cf62f11c" compoundref="main_8cpp" startline="1981" endline="2144">Construct_ME</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hartree_fock_1af0c009ecdaf0308740355bc6c2482bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int HartreeFock::Count_Particle</definition>
+        <argsstring>(int config)</argsstring>
+        <name>Count_Particle</name>
+        <param>
+          <type>int</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1388" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1498" bodyend="1507"/>
+        <referencedby refid="class_hartree_fock_1a19fc02314568b45713933525cf62f11c" compoundref="main_8cpp" startline="1981" endline="2144">Construct_ME</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="33">
+        <label>J_Orbit</label>
+        <link refid="class_j___orbit"/>
+      </node>
+      <node id="32">
+        <label>Interaction&lt; cx_double &gt;</label>
+        <link refid="class_interaction"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>J_scheme</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>Orbit</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>M_scheme</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>Coupled_State</label>
+        <link refid="struct_coupled___state"/>
+      </node>
+      <node id="36">
+        <label>Interaction&lt; double &gt;</label>
+        <link refid="class_interaction"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>J_scheme</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>Orbit</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>M_scheme</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>HartreeFock</label>
+        <link refid="class_hartree_fock"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>ME_HF</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>ME</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>M_State</label>
+        <link refid="class_m___state"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="1360" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="1359" bodyend="1404"/>
+    <listofallmembers>
+      <member refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>AMP</name></member>
+      <member refid="class_hartree_fock_1ae654600f841836c3cb98abee72bf6c35" prot="private" virt="non-virtual"><scope>HartreeFock</scope><name>BE</name></member>
+      <member refid="class_hartree_fock_1a7e7361a6e064c9983b0e263f250dd615" prot="private" virt="non-virtual"><scope>HartreeFock</scope><name>bra</name></member>
+      <member refid="class_hartree_fock_1a1d8f2d0c9841c8b999fa31758b059214" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>Broyden</name></member>
+      <member refid="class_hartree_fock_1a19fc02314568b45713933525cf62f11c" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>Construct_ME</name></member>
+      <member refid="class_hartree_fock_1af0c009ecdaf0308740355bc6c2482bc2" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>Count_Particle</name></member>
+      <member refid="class_hartree_fock_1a36141675bcd557c4241e82b9bf964577" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>DBP</name></member>
+      <member refid="class_hartree_fock_1a455afd726ee175800c437ac957fab978" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>Density_Matrix</name></member>
+      <member refid="class_hartree_fock_1a78d4a33402c7d999286bdc164cc853b5" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>Diagonalization</name></member>
+      <member refid="class_hartree_fock_1a1bb866f2ea89dc0d44f70e1d8e6b1425" prot="private" virt="non-virtual"><scope>HartreeFock</scope><name>E_sp</name></member>
+      <member refid="class_hartree_fock_1a4cd7c0aece3eec0c593638763f846d36" prot="private" virt="non-virtual"><scope>HartreeFock</scope><name>H_sp</name></member>
+      <member refid="class_hartree_fock_1accb7866bf87089908210f64157668914" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>Hamiltonian</name></member>
+      <member refid="class_hartree_fock_1af85bdddebed73f27c2b883c2d9e8972e" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>Hamiltonian_sp</name></member>
+      <member refid="class_hartree_fock_1a0138ea06db729472531ba768af7d0f4f" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>HartreeFock</name></member>
+      <member refid="class_hartree_fock_1a14aa8c8c8fff19eb82609abc7fb24958" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>HW_Equation_Hermitian</name></member>
+      <member refid="class_hartree_fock_1a727be4c17f68c9ce3cbfcaae6f97e752" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>Initialization</name></member>
+      <member refid="class_hartree_fock_1a0ae03c7ead906063143f0047d32f1ee1" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>Iteration</name></member>
+      <member refid="class_hartree_fock_1a78ba84d83058ad9c7db287beebb154d4" prot="private" virt="non-virtual"><scope>HartreeFock</scope><name>ket</name></member>
+      <member refid="class_hartree_fock_1a18404222b2f400fb9c9985e0b7c7e664" prot="private" virt="non-virtual"><scope>HartreeFock</scope><name>MassNumber</name></member>
+      <member refid="class_hartree_fock_1a4a6514cfef19a943db8cb06b245b2f93" prot="private" virt="non-virtual"><scope>HartreeFock</scope><name>ME</name></member>
+      <member refid="class_hartree_fock_1abfd928be86a6d127aff8d8c928d30695" prot="private" virt="non-virtual"><scope>HartreeFock</scope><name>ME_HF</name></member>
+      <member refid="class_hartree_fock_1a489618a047bfb88057bd50d73d79c2e3" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>Mean_Field</name></member>
+      <member refid="class_hartree_fock_1a645d83d6370a8adf666416d08c846ddd" prot="private" virt="non-virtual"><scope>HartreeFock</scope><name>Nucleus</name></member>
+      <member refid="class_hartree_fock_1a2cb43d38447325572989595370320706" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>pack</name></member>
+      <member refid="class_hartree_fock_1a1f460784edc46e9b41d4ea047ef3a3a1" prot="private" virt="non-virtual"><scope>HartreeFock</scope><name>rho</name></member>
+      <member refid="class_hartree_fock_1a6e1d4d4e338a2d55746543a230035121" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>Rotation</name></member>
+      <member refid="class_hartree_fock_1af5b3a51f8b65bdda59845648a4865d80" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>Space_Inversion</name></member>
+      <member refid="class_hartree_fock_1a65f76efc9fb81e474af5985c52861e0d" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>unpack</name></member>
+      <member refid="class_hartree_fock_1a0362bdcdbf5969097be8c03576639e53" prot="private" virt="non-virtual"><scope>HartreeFock</scope><name>V_mf</name></member>
+      <member refid="class_hartree_fock_1a82ad40272840da4287b9a602415beac4" prot="public" virt="non-virtual"><scope>HartreeFock</scope><name>~HartreeFock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

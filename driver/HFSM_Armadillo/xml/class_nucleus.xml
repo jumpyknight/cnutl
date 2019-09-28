@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.4">
+  <compounddef id="class_nucleus" kind="class" prot="public">
+    <compoundname>Nucleus</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_nucleus_1a26891e375a90425a013eab9c7176f318" prot="private" static="no" mutable="no">
+        <type><ref refid="class_hartree_fock" kindref="compound">HartreeFock</ref></type>
+        <definition>HartreeFock Nucleus::Basis</definition>
+        <argsstring></argsstring>
+        <name>Basis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="2158" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="2158" bodyend="-1"/>
+        <referencedby refid="class_nucleus_1a5f953c3273fccb833c90c929e6c991a2" compoundref="main_8cpp" startline="2167" endline="2269">Construct_Configuration</referencedby>
+        <referencedby refid="class_nucleus_1a5e449f1e876db72824f9466131becac0" compoundref="main_8cpp" startline="2271" endline="2424">Spectral</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_nucleus_1a0bca60cd6f52b789fa096d0f5ce2a75e" prot="private" static="no" mutable="no">
+        <type>imat</type>
+        <definition>imat Nucleus::Configuration[Interaction&lt; double &gt;::IsoSpin_Z]</definition>
+        <argsstring>[Interaction&lt; double &gt;::IsoSpin_Z]</argsstring>
+        <name>Configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="2160" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="2160" bodyend="-1"/>
+        <referencedby refid="class_nucleus_1a5f953c3273fccb833c90c929e6c991a2" compoundref="main_8cpp" startline="2167" endline="2269">Construct_Configuration</referencedby>
+        <referencedby refid="class_nucleus_1a5e449f1e876db72824f9466131becac0" compoundref="main_8cpp" startline="2271" endline="2424">Spectral</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_nucleus_1aa51f8aa0e853d8c58c8bbf7e56eb93f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Nucleus::Nucleus</definition>
+        <argsstring>(int Z, int A, string space, string force)</argsstring>
+        <name>Nucleus</name>
+        <param>
+          <type>int</type>
+          <declname>Z</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>space</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="2151" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="2163" bodyend="2165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nucleus_1a012f1716baa1cf5317e6fc0e06c44647" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Nucleus::~Nucleus</definition>
+        <argsstring>()</argsstring>
+        <name>~Nucleus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="2152" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="2152" bodyend="2152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nucleus_1a5f953c3273fccb833c90c929e6c991a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Nucleus::Construct_Configuration</definition>
+        <argsstring>(vec &amp;E_cutoff)</argsstring>
+        <name>Construct_Configuration</name>
+        <param>
+          <type>vec &amp;</type>
+          <declname>E_cutoff</declname>
+        </param>
+        <briefdescription>
+<para>Construct different configurations. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>WF</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hartree Fock wavefunctions </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Different excited configurations </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>!!!!! </para>        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="2154" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="2167" bodyend="2269"/>
+        <references refid="class_nucleus_1a26891e375a90425a013eab9c7176f318" compoundref="main_8cpp" startline="2158">Basis</references>
+        <references refid="class_hartree_fock_1a1bb866f2ea89dc0d44f70e1d8e6b1425" compoundref="main_8cpp" startline="1402">HartreeFock::E_sp</references>
+        <references refid="class_hartree_fock_1a18404222b2f400fb9c9985e0b7c7e664" compoundref="main_8cpp" startline="1394">HartreeFock::MassNumber</references>
+        <references refid="class_nucleus_1a0bca60cd6f52b789fa096d0f5ce2a75e" compoundref="main_8cpp" startline="2160">Configuration</references>
+        <referencedby refid="class_nucleus_1a5e449f1e876db72824f9466131becac0" compoundref="main_8cpp" startline="2271" endline="2424">Spectral</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_nucleus_1a5e449f1e876db72824f9466131becac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Nucleus::Spectral</definition>
+        <argsstring>(vec &amp;J, vec &amp;Parity)</argsstring>
+        <name>Spectral</name>
+        <param>
+          <type>vec &amp;</type>
+          <declname>J</declname>
+        </param>
+        <param>
+          <type>vec &amp;</type>
+          <declname>Parity</declname>
+        </param>
+        <briefdescription>
+<para>Spectral with angular momentum projection. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>J</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>angular momentum </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>P</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parity </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Excited energies </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="2155" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="2271" bodyend="2424"/>
+        <references refid="class_nucleus_1a26891e375a90425a013eab9c7176f318" compoundref="main_8cpp" startline="2158">Basis</references>
+        <references refid="class_hartree_fock_1a0ae03c7ead906063143f0047d32f1ee1" compoundref="main_8cpp" startline="1670" endline="1697">HartreeFock::Iteration</references>
+        <references refid="class_nucleus_1a5f953c3273fccb833c90c929e6c991a2" compoundref="main_8cpp" startline="2167" endline="2269">Construct_Configuration</references>
+        <references refid="class_nucleus_1a0bca60cd6f52b789fa096d0f5ce2a75e" compoundref="main_8cpp" startline="2160">Configuration</references>
+        <references refid="class_hartree_fock_1a18404222b2f400fb9c9985e0b7c7e664" compoundref="main_8cpp" startline="1394">HartreeFock::MassNumber</references>
+        <references refid="class_hartree_fock_1a7e7361a6e064c9983b0e263f250dd615" compoundref="main_8cpp" startline="1397">HartreeFock::bra</references>
+        <references refid="class_hartree_fock_1a78ba84d83058ad9c7db287beebb154d4" compoundref="main_8cpp" startline="1398">HartreeFock::ket</references>
+        <references refid="class_hartree_fock_1a83bfa55f6be64c2b678df42801594e52" compoundref="main_8cpp" startline="1774" endline="1917">HartreeFock::AMP</references>
+        <references refid="class_hartree_fock_1a14aa8c8c8fff19eb82609abc7fb24958" compoundref="main_8cpp" startline="1920" endline="1950">HartreeFock::HW_Equation_Hermitian</references>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="2544" endline="2577">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_nucleus_1a2f41a5f6ec0546ec57736d5f0bad6e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Nucleus::Spectral</definition>
+        <argsstring>()</argsstring>
+        <name>Spectral</name>
+        <briefdescription>
+<para>Spectral with angular momentum projection. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Excited energies </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="2156" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="2426" bodyend="2541"/>
+        <references refid="class_nucleus_1a26891e375a90425a013eab9c7176f318" compoundref="main_8cpp" startline="2158">Basis</references>
+        <references refid="class_hartree_fock_1a0ae03c7ead906063143f0047d32f1ee1" compoundref="main_8cpp" startline="1670" endline="1697">HartreeFock::Iteration</references>
+        <references refid="class_hartree_fock_1abfd928be86a6d127aff8d8c928d30695" compoundref="main_8cpp" startline="1393">HartreeFock::ME_HF</references>
+        <references refid="class_interaction_1aa840d7de0932cb51370619a8033b7800" compoundref="main_8cpp" startline="274" endline="403">Interaction&lt; T &gt;::Basis_Transform</references>
+        <references refid="class_hartree_fock_1a4a6514cfef19a943db8cb06b245b2f93" compoundref="main_8cpp" startline="1392">HartreeFock::ME</references>
+        <references refid="class_hartree_fock_1a7e7361a6e064c9983b0e263f250dd615" compoundref="main_8cpp" startline="1397">HartreeFock::bra</references>
+        <references refid="class_hartree_fock_1a78ba84d83058ad9c7db287beebb154d4" compoundref="main_8cpp" startline="1398">HartreeFock::ket</references>
+        <references refid="class_nucleus_1a5f953c3273fccb833c90c929e6c991a2" compoundref="main_8cpp" startline="2167" endline="2269">Construct_Configuration</references>
+        <references refid="class_nucleus_1a0bca60cd6f52b789fa096d0f5ce2a75e" compoundref="main_8cpp" startline="2160">Configuration</references>
+        <references refid="class_hartree_fock_1a18404222b2f400fb9c9985e0b7c7e664" compoundref="main_8cpp" startline="1394">HartreeFock::MassNumber</references>
+        <references refid="class_hartree_fock_1a2cb43d38447325572989595370320706" compoundref="main_8cpp" startline="1471" endline="1477">HartreeFock::pack</references>
+        <references refid="class_hartree_fock_1a19fc02314568b45713933525cf62f11c" compoundref="main_8cpp" startline="1981" endline="2144">HartreeFock::Construct_ME</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="47">
+        <label>Nucleus</label>
+        <link refid="class_nucleus"/>
+        <childnode refid="48" relation="usage">
+          <edgelabel>Basis</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>J_Orbit</label>
+        <link refid="class_j___orbit"/>
+      </node>
+      <node id="49">
+        <label>Interaction&lt; cx_double &gt;</label>
+        <link refid="class_interaction"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>J_scheme</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>Orbit</edgelabel>
+        </childnode>
+        <childnode refid="52" relation="usage">
+          <edgelabel>M_scheme</edgelabel>
+        </childnode>
+      </node>
+      <node id="51">
+        <label>Coupled_State</label>
+        <link refid="struct_coupled___state"/>
+      </node>
+      <node id="53">
+        <label>Interaction&lt; double &gt;</label>
+        <link refid="class_interaction"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>J_scheme</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>Orbit</edgelabel>
+        </childnode>
+        <childnode refid="52" relation="usage">
+          <edgelabel>M_scheme</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>HartreeFock</label>
+        <link refid="class_hartree_fock"/>
+        <childnode refid="49" relation="usage">
+          <edgelabel>ME_HF</edgelabel>
+        </childnode>
+        <childnode refid="53" relation="usage">
+          <edgelabel>ME</edgelabel>
+        </childnode>
+      </node>
+      <node id="52">
+        <label>M_State</label>
+        <link refid="class_m___state"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" line="2149" column="1" bodyfile="F:/Wang Simin's document/my C++ Project/HFSM_Armadillo/main.cpp" bodystart="2148" bodyend="2161"/>
+    <listofallmembers>
+      <member refid="class_nucleus_1a26891e375a90425a013eab9c7176f318" prot="private" virt="non-virtual"><scope>Nucleus</scope><name>Basis</name></member>
+      <member refid="class_nucleus_1a0bca60cd6f52b789fa096d0f5ce2a75e" prot="private" virt="non-virtual"><scope>Nucleus</scope><name>Configuration</name></member>
+      <member refid="class_nucleus_1a5f953c3273fccb833c90c929e6c991a2" prot="public" virt="non-virtual"><scope>Nucleus</scope><name>Construct_Configuration</name></member>
+      <member refid="class_nucleus_1aa51f8aa0e853d8c58c8bbf7e56eb93f9" prot="public" virt="non-virtual"><scope>Nucleus</scope><name>Nucleus</name></member>
+      <member refid="class_nucleus_1a5e449f1e876db72824f9466131becac0" prot="public" virt="non-virtual"><scope>Nucleus</scope><name>Spectral</name></member>
+      <member refid="class_nucleus_1a2f41a5f6ec0546ec57736d5f0bad6e17" prot="public" virt="non-virtual"><scope>Nucleus</scope><name>Spectral</name></member>
+      <member refid="class_nucleus_1a012f1716baa1cf5317e6fc0e06c44647" prot="public" virt="non-virtual"><scope>Nucleus</scope><name>~Nucleus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
